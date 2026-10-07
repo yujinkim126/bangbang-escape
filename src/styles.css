@@ -367,6 +367,8 @@ h2 { font-size: 20px; font-weight: 800; line-height: 1.35; }
 .login h1 { font-size: 26px; }
 .login .tagline { margin: 6px 0 24px; color: var(--ink-3); }
 .login-form { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+.btn.kakao { background: #fee500; color: #191600; }
+.btn.kakao:hover { background: #f5dc00; }
 
 /* ── 토스트 ── */
 .toasts { position: fixed; top: 72px; left: 50%; transform: translateX(-50%); z-index: 3000; display: flex; flex-direction: column; gap: 8px; width: min(360px, calc(100% - 24px)); }

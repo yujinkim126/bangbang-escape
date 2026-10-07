@@ -1,32 +1,30 @@
-import { useState, type FormEvent } from "react";
-import { Navigate } from "react-router-dom";
+import { useState } from "react";
+import { Link, Navigate } from "react-router-dom";
 import { useApp } from "../lib/data";
 import { supabase } from "../lib/supabase";
 import { Logo } from "../components/Icon";
 
 export default function LoginPage() {
   const { session, demo } = useApp();
-  const [email, setEmail] = useState("");
-  const [sent, setSent] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  // 체험 모드는 늘 로그인된 상태라, 화면 확인용으로 리다이렉트하지 않음
   if (session && !demo) return <Navigate to="/" replace />;
 
-  async function submit(e: FormEvent) {
-    e.preventDefault();
-    if (demo) { setSent(true); return; } // 체험 모드: 메일은 안 보내고 완료 화면만
+  async function signInWithKakao() {
     setBusy(true);
     setErr(null);
-    const { error } = await supabase.auth.signInWithOtp({
-      email,
-      // Supabase의 Site URL(기본 http://localhost:3000)과 정확히 같아야 해서 경로 없이 보냄
-      options: { emailRedirectTo: window.location.origin },
-    });
-    setBusy(false);
-    if (error) setErr(error.message);
-    else setSent(true);
+    try {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: "kakao",
+        options: { redirectTo: window.location.origin },
+      });
+      if (error) setErr(error.message);
+    } catch (e) {
+      setErr(e instanceof Error ? e.message : "카카오 로그인을 시작하지 못했어요.");
+    } finally {
+      setBusy(false);
+    }
   }
 
   return (
@@ -35,15 +33,19 @@ export default function LoginPage() {
         <Logo size={128} bounce />
         <h1>방방</h1>
         <p className="tagline">방탈출 기록하고, 테마 찾고, 뱃지 모으기</p>
-        {sent ? (
-          <p><b>{email}</b>로 로그인 링크를 보냈어요. 메일함에서 링크를 누르면 바로 들어와져요.{demo && <><br /><span className="muted small">(체험 모드라 실제로 보내진 않았어요)</span></>}</p>
+        {demo ? (
+          <>
+            <p className="muted small">이 화면은 브라우저에만 기록을 저장해요. 카카오 로그인은 계정 연결 후에 쓸 수 있어요.</p>
+            <Link to="/records/new" className="btn wide">기록하기</Link>
+          </>
         ) : (
-          <form onSubmit={submit} className="login-form">
-            <p className="muted small">비밀번호 없이, 이메일로 받은 링크를 누르면 로그인돼요.</p>
-            <input className="input" type="email" required placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <>
+            <p className="muted small">카카오 계정으로 로그인하면 기록이 계정에 저장돼요.</p>
             {err && <div className="banner error">{err}</div>}
-            <button className="btn wide" disabled={busy}>{busy ? "보내는 중…" : "로그인 링크 받기"}</button>
-          </form>
+            <button className="btn kakao wide" type="button" onClick={signInWithKakao} disabled={busy}>
+              {busy ? "카카오로 이동 중…" : "카카오로 로그인"}
+            </button>
+          </>
         )}
       </div>
     </div>
