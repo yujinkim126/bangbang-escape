@@ -2,6 +2,7 @@
 // 이미지 파일은 저장하지 않고 주소만 data/poster-candidates.json에 남긴다.
 // robots.txt에서 막힌 경로, 크롤링 금지 문구가 있는 사이트는 건너뛴다.
 import { readFile, writeFile } from 'node:fs/promises';
+import { parseHTML } from 'linkedom';
 
 const catalog = JSON.parse(await readFile(new URL('../src/lib/demo-catalog.json', import.meta.url), 'utf8'));
 const UA = 'bangbang-poster-check/1.0 (+https://bangbang-escape.vercel.app)';
@@ -52,60 +53,69 @@ async function decode(r) {
   try { return new TextDecoder(/euc-kr|ks_c_5601|cp949/i.test(cs) ? 'euc-kr' : cs).decode(buf); } catch { return buf.toString('utf8'); }
 }
 
-// 이미지 태그 + 주변 텍스트에서 테마 이름을 찾아 짝짓기
+// HTML을 문서 구조로 읽어 짝짓기.
+// 1) 이미지 alt에 테마 이름이 있으면 확정
+// 2) 테마 이름이 적힌 가장 안쪽 요소에서 위로 올라가며, 포스터 후보 이미지가 처음 나오는 조상이
+//    이미지를 딱 하나(같은 주소) 품고 있으면 그 카드의 포스터로 본다. 둘 이상이면 애매해서 버린다
+const SKIP = /logo|icon|btn|button|arrow|banner|sns|kakao|naver|insta|blank|spacer|\.svg|(^|\/)ico?[_-]/i;
 function match(html, base, themes) {
+  const { document } = parseHTML(html);
+  const abs = (s) => { try { return new URL(s.replace(/&amp;/g, '&'), base).href; } catch { return null; } };
+  const imgSrc = (el) => {
+    if (el.tagName === 'IMG') return attr(el.outerHTML);
+    const m = (el.getAttribute('style') || '').match(/background(?:-image)?\s*:\s*url\(\s*['"]?([^'")]+)/i);
+    return m?.[1];
+  };
+  const cands = [...document.querySelectorAll('img, [style*="url("]')]
+    .map((el) => ({ el, src: imgSrc(el) }))
+    .filter((c) => c.src && !c.src.startsWith('data:') && !SKIP.test(c.src))
+    .map((c) => ({ ...c, src: abs(c.src) }))
+    .filter((c) => c.src);
+  // 페이지에 여러 번 나오는 이미지(별점·아이콘)는 제외. 같은 포스터가 두 지점 탭에 나오는 경우는 남긴다
+  const count = {};
+  for (const c of cands) count[c.src] = (count[c.src] || 0) + 1;
+  const posters = cands.filter((c) => count[c.src] < 3);
+  const isPoster = new Set(posters.map((c) => c.el));
+  const srcOf = new Map(posters.map((c) => [c.el, c.src]));
+
   const found = new Map();
-  const imgs = [...html.matchAll(/<img\b[^>]*>/gi)];
-  const bgs = [...html.matchAll(/background(?:-image)?\s*:\s*url\(\s*['"]?([^'")]+)['"]?\s*\)/gi)];
-  const cands = [
-    ...imgs.map((m) => ({ tag: m[0], at: m.index, src: attr(m[0]) })),
-    ...bgs.map((m) => ({ tag: m[0], at: m.index, src: m[1] })),
-    // 스크립트·JSON 안에 들어 있는 이미지 주소 (Next.js 등)
-    ...[...html.matchAll(/(?:https?:)?(?:\\?\/)[^\s"'()<>\\]*?\.(?:jpe?g|png|webp)(?:\?[^\s"'()<>\\]*)?/gi)].map((m) => ({ tag: '', at: m.index, src: m[0].replace(/\\\//g, '/') })),
-  ].filter((c) => c.src && !c.src.startsWith('data:') && !/logo|icon|btn|button|arrow|banner|sns|kakao|naver|insta|blank|spacer|\.svg|\.gif|(^|\/)ico?[_-]/i.test(c.src));
-  // 페이지에 여러 번 반복되는 이미지는 별점·아이콘 같은 장식
-  const seen = {};
-  for (const c of cands) if (c.tag) seen[c.src] = (seen[c.src] || 0) + 1;
-  for (let i = cands.length - 1; i >= 0; i--) if (seen[cands[i].src] >= 3) cands.splice(i, 1);
-  // 같은 이미지가 태그와 원문 주소로 두 번 잡힌 것 정리
-  const imgsAt = [];
-  for (const c of cands.sort((a, b) => a.at - b.at)) {
-    let src; try { src = new URL(c.src.replace(/&amp;/g, '&'), base).href; } catch { continue; }
-    const prev = imgsAt.at(-1);
-    if (prev && prev.src === src && c.at - prev.at < 400) continue;
-    imgsAt.push({ ...c, src, alt: norm((c.tag.match(/\balt\s*=\s*["']([^"']*)["']/i) || [])[1] || '') });
-  }
-  const names = themes.map((t) => ({ t, n: norm(t.name) })).filter((x) => x.n.length >= 2).sort((a, b) => b.n.length - a.n.length);
+  const names = themes.map((t) => ({ t, n: norm(t.name) })).filter((x) => x.n.length >= 1).sort((a, b) => b.n.length - a.n.length);
 
-  // 1) alt에 테마 이름이 들어 있으면 바로 확정
-  for (const im of imgsAt) {
-    const hit = names.find(({ t, n }) => !found.has(t.id) && im.alt.includes(n));
-    if (hit) { found.set(hit.t.id, { theme_id: hit.t.id, name: hit.t.name, poster_url: im.src, how: 'alt' }); im.used = true; }
+  for (const c of posters) {
+    const alt = norm(c.el.getAttribute('alt') || '');
+    if (!alt) continue;
+    const hit = names.find(({ t, n }) => !found.has(t.id) && n.length >= 2 && alt.includes(n));
+    if (hit) found.set(hit.t.id, { theme_id: hit.t.id, name: hit.t.name, poster_url: c.src, how: 'alt' });
   }
 
-  // 2) 원문에서 이름이 나오는 위치 (긴 이름부터, 겹치는 자리는 건너뜀)
-  const sep = '(?:<[^>]*>|&[#\\w]+;|[^\\p{L}\\p{N}<]){0,6}';
-  const taken = [], occ = [];
-  for (const { t } of names) {
-    const chars = [...t.name.replace(/[^\p{L}\p{N}]/gu, '')].map((ch) => ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-    const re = new RegExp(chars.join(sep), 'giu');
-    for (const m of html.matchAll(re)) {
-      const a = m.index, b = a + m[0].length;
-      if (taken.some(([x, y]) => a < y && b > x)) continue;
-      taken.push([a, b]); occ.push({ t, at: a, end: b });
+  // 파일 이름에 테마 이름이 들어 있으면 확정 (예: /upload_file/room/구둣방손님(1).jpg)
+  for (const c of posters) {
+    let file; try { file = norm(decodeURIComponent(new URL(c.src).pathname.split('/').pop().replace(/\.\w+$/, ''))); } catch { continue; }
+    const hit = names.find(({ t, n }) => !found.has(t.id) && n.length >= 2 && file.includes(n));
+    if (hit) found.set(hit.t.id, { theme_id: hit.t.id, name: hit.t.name, poster_url: c.src, how: 'filename' });
+  }
+
+  // 텍스트가 정확히 테마 이름인(또는 이름을 포함하는 짧은) 가장 안쪽 요소
+  const textEls = [...document.querySelectorAll('body *')].filter((el) => !['SCRIPT', 'STYLE', 'NOSCRIPT', 'OPTION', 'SELECT'].includes(el.tagName));
+  for (const { t, n } of names) {
+    if (found.has(t.id)) continue;
+    const holders = textEls.filter((el) => {
+      const own = norm(el.textContent || '');
+      if (!own.includes(n) || own.length > n.length + 40) return false;
+      return ![...el.children].some((ch) => norm(ch.textContent || '').includes(n));
+    });
+    for (const h of holders) {
+      let el = h, srcs = null;
+      for (let up = 0; up < 8 && el && el.tagName !== 'BODY'; up++, el = el.parentElement) {
+        const inside = [...el.querySelectorAll('*')].filter((x) => isPoster.has(x)).map((x) => srcOf.get(x));
+        if (isPoster.has(el)) inside.push(srcOf.get(el));
+        if (inside.length) { srcs = new Set(inside); break; }
+      }
+      if (srcs?.size === 1) {
+        found.set(t.id, { theme_id: t.id, name: t.name, poster_url: [...srcs][0], how: 'card' });
+        break;
+      }
     }
-  }
-
-  // 3) 이미지와 이름이 서로 가장 가까울 때만 짝짓기
-  const dist = (im, o) => (im.at < o.at ? o.at - im.at : im.at - o.end);
-  const free = imgsAt.filter((im) => !im.used);
-  for (const o of occ) {
-    if (found.has(o.t.id) || !free.length) continue;
-    const im = free.reduce((a, b) => (dist(b, o) < dist(a, o) ? b : a));
-    if (dist(im, o) > 1500) continue;
-    const back = occ.reduce((a, b) => (dist(im, b) < dist(im, a) ? b : a));
-    if (back !== o) continue;
-    found.set(o.t.id, { theme_id: o.t.id, name: o.t.name, poster_url: im.src, how: 'nearest' });
   }
   return [...found.values()];
 }
