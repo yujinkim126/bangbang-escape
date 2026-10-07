@@ -6,13 +6,16 @@
 
 ## 스택
 - React 18 + Vite 5 + TypeScript, react-router-dom 6
-- Supabase (프로젝트 `escape-log`, ref `akgjspijniaudapdcjda`, 리전 서울) — DB·로그인(이메일 매직링크)
+- Supabase (프로젝트 `escape-log`, ref `akgjspijniaudapdcjda`, 리전 서울) — DB·로그인(카카오 OAuth)
+  - 로그인 창은 팝업: `components/Login.tsx`의 `openLogin()` (로그인 안 했을 때 내 기록·기록하기 메뉴, 헤더 버튼 등). `/login`은 직접 들어온 경우용
+  - Supabase Auth URL: Site URL `https://bangbang-escape.vercel.app`, Redirect URLs `https://bangbang-escape.vercel.app/**`, `http://localhost:3001/**`
+  - 카카오 앱(bangbang) 동의항목에 이메일 필요 (없으면 KOE205). 운영 DB에는 sql 1~11 모두 실행됨 (2026-10-07)
 - 지도: react-leaflet + OpenStreetMap 타일 (키 불필요, 원본 컬러 그대로. 핀은 파랑). 카카오맵 교체 예정
   (CARTO 타일은 이제 API 키가 필요해서 안 씀)
 - 테스트: vitest (`src/lib/badges.test.ts`)
 
 ## 명령
-- `npm run dev` → http://localhost:3000 (Supabase 기본 Site URL이 localhost:3000이라 포트 고정)
+- `npm run dev` → 미리보기는 `.claude/launch.json` 기준 http://localhost:3001 (Supabase Redirect URLs에 3001 등록됨)
 - `npm test`, `npm run build` (tsc 타입체크 포함)
 - `.env`에 `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY` 필요 (`.env.example` 참고).
   **`.env`가 없으면 체험 모드**: `src/lib/demo.ts` + `demo-catalog.json`(sql/2, sql/3에서 뽑은 홍대 데이터)으로 뜨고, 기록은 메모리에만 저장.
