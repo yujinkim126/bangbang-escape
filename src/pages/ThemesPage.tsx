@@ -52,7 +52,7 @@ export default function ThemesPage() {
         {storeId&&<div className="store-filter">이 매장의 테마를 보고 있어요.<button className="link-btn" onClick={()=>set('store','')}>전체 매장 보기</button></div>}
         <div className="theme-grid" aria-live="polite">{list.map(t=>{const s=catalog.stores.get(t.store_id);const result=results.get(t.id);return <button key={t.id} className="theme-card card" onClick={()=>set('theme',t.id)}>
           <ThemePoster theme={t} /><div className="theme-card-top"><span className="area-label">{areaOf(s)}</span>{result!==undefined?<Seal success={result}/>:<span className="card-arrow" aria-hidden="true">↗</span>}</div>
-          <div className="theme-name">{t.name}</div><div className="theme-store">{s?.name}</div>
+          <div className="theme-name" title={t.name}>{t.name}</div><div className="theme-store">{s?.name}</div>
           <div className="tags">{t.genres.length?t.genres.map(g=><span key={g} className="tag">{g}</span>):<span className="tag">장르 정보 준비 중</span>}</div>
           <div className="theme-facts"><div><span>플레이 시간</span><strong>{t.duration_min?`${t.duration_min}분`:'미확인'}</strong></div><div><span>추천 인원</span><strong>{playersText(t.players_min,t.players_max)||'미확인'}</strong></div><div><span>난이도</span><strong>{difficultyText(t.difficulty)}</strong></div></div>
           <div className={`fear-line ${t.fear!=null&&t.fear>0?'has-fear':''}`}>{fearText(t.fear)||'공포도 미확인'}</div>

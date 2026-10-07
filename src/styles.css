@@ -583,3 +583,7 @@ button:focus-visible,a:focus-visible,select:focus-visible { outline:3px solid va
 
 /* 카드 이미지는 포스터 비율(3:4)로 */
 .record-option .theme-poster, .theme-card .theme-poster { height:auto; aspect-ratio:3/4; object-fit:cover; }
+
+/* 띄어쓰기 없는 아주 긴 테마 이름도 카드 안에서 두 줄로 자르기 */
+.record-option .theme-name, .theme-card .theme-name { overflow-wrap:anywhere; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.sheet-title, .sheet h2 { overflow-wrap:anywhere; }

@@ -4,5 +4,13 @@
   "installCommand": "npm ci",
   "buildCommand": "npm test && npm run build",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/((?!assets/|api/|logo.webp|favicon.ico).*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/((?!assets/|api/|logo.webp|favicon.ico).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "regions": [
+    "icn1"
+  ]
 }
