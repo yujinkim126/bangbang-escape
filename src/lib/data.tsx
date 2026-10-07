@@ -30,6 +30,18 @@ interface AppData {
 
 const Ctx = createContext<AppData | null>(null);
 
+// 로그인 직후엔 Supabase 서버끼리 시계가 몇 초 어긋나 "JWT issued at future"로 거절될 때가 있다.
+// 그 에러면 잠깐 기다렸다 다시 요청한다 (최대 약 10초)
+const isClockSkew = (e: { message?: string } | null) => Boolean(e?.message?.includes("issued at future"));
+async function retryOnClockSkew<T extends { error: { message?: string } | null }>(run: () => PromiseLike<T>): Promise<T> {
+  let res = await run();
+  for (let i = 0; i < 5 && isClockSkew(res.error); i++) {
+    await new Promise((r) => setTimeout(r, 2000));
+    res = await run();
+  }
+  return res;
+}
+
 export function useApp() {
   const v = useContext(Ctx);
   if (!v) throw new Error("useApp must be used inside <AppProvider>");
@@ -62,9 +74,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }
     (async () => {
       const [s, t, b] = await Promise.all([
-        supabase.from("stores").select("id,kakao_id,name,address,lat,lng,phone,kakao_url,status,brand:brands(name)"),
-        supabase.from("themes").select("*"),
-        supabase.from("badges").select("*"),
+        retryOnClockSkew(() => supabase.from("stores").select("id,kakao_id,name,address,lat,lng,phone,kakao_url,status,brand:brands(name)")),
+        retryOnClockSkew(() => supabase.from("themes").select("*")),
+        retryOnClockSkew(() => supabase.from("badges").select("*")),
       ]);
       const err = s.error ?? t.error ?? b.error;
       if (err) setError(err.message);
@@ -86,9 +98,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
       window.addEventListener('storage', sync);
       return () => window.removeEventListener('storage', sync);
     }
-    supabase.from("records").select("*").order("played_at", { ascending: false })
+    retryOnClockSkew(() => supabase.from("records").select("*").order("played_at", { ascending: false }))
       .then(({ data, error }) => {
         if (error) setError(error.message);
+        else setError((e) => (e && e.includes("issued at future") ? null : e));
         setRecords(((data ?? []) as EscapeRecord[]).map((r) => ({ ...r, rating: r.rating == null ? null : Number(r.rating) })));
       });
   }, [userId]);
@@ -106,7 +119,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     if (DEMO) {
       saved = { ...r, id: crypto.randomUUID(), user_id: userId, created_at: new Date().toISOString() };
     } else {
-      const { data, error } = await supabase.from("records").insert({ ...r, user_id: userId }).select().single();
+      const { data, error } = await retryOnClockSkew(() => supabase.from("records").insert({ ...r, user_id: userId }).select().single());
       if (error) throw new Error(error.message);
       saved = { ...(data as EscapeRecord), rating: data.rating == null ? null : Number(data.rating) };
     }
@@ -126,7 +139,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const deleteRecord = useCallback(async (id: string) => {
     if (DEMO) { const next = readRecords(localStorage).filter(r => r.id !== id); saveRecords(localStorage, next); setRecords(next); return; }
-    const { error } = await supabase.from("records").delete().eq("id", id);
+    const { error } = await retryOnClockSkew(() => supabase.from("records").delete().eq("id", id));
     if (error) throw new Error(error.message);
     setRecords((rs) => rs.filter((r) => r.id !== id));
   }, []);
