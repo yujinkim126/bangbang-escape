@@ -6,13 +6,15 @@ import LogPage from "./pages/LogPage";
 import BadgesPage from "./pages/BadgesPage";
 import LoginPage from "./pages/LoginPage";
 import { ToastHost } from "./components/Toast";
+import { LoginHost, openLogin } from "./components/Login";
 import Icon, { Logo, type IconName } from "./components/Icon";
 
 import RecordPage from "./pages/RecordPage";
 
-const NAV: { to: string; label: string; icon: IconName; also?: string }[] = [
-  { to: "/", label: "내 기록", icon: "log" },
-  { to: "/records/new", label: "기록하기", icon: "plus" },
+// needsLogin: 로그인 안 했으면 이동 대신 로그인 창을 띄운다
+const NAV: { to: string; label: string; icon: IconName; also?: string; needsLogin?: boolean }[] = [
+  { to: "/", label: "내 기록", icon: "log", needsLogin: true },
+  { to: "/records/new", label: "기록하기", icon: "plus", needsLogin: true },
   { to: "/themes", label: "찾기", icon: "search", also: "/map" },
   { to: "/badges", label: "뱃지", icon: "badge" },
 ];
@@ -31,6 +33,7 @@ export default function App() {
         <nav className="nav" aria-label="메뉴">
           {NAV.map((n) => (
             <NavLink key={n.to} to={n.to} end={n.to === "/"}
+              onClick={(e) => { if (n.needsLogin && !session && !demo) { e.preventDefault(); openLogin(); } }}
               className={({ isActive }) => `nav-link ${isActive || (n.also && pathname.startsWith(n.also)) ? "active" : ""}`}>
               <Icon name={n.icon} />
               <span>{n.label}</span>
@@ -43,7 +46,7 @@ export default function App() {
           ) : session ? (
             <button className="btn-ghost sm" onClick={signOut} title={session.user.email ?? ""}>로그아웃</button>
           ) : (
-            <NavLink to="/login" className="btn sm">로그인</NavLink>
+            <button className="btn-outline sm" onClick={openLogin}>로그인</button>
           )}
         </div>
       </header>
@@ -64,6 +67,7 @@ export default function App() {
           </Routes>
         )}
       </main>
+      <LoginHost />
       <ToastHost />
     </div>
   );

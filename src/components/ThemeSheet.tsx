@@ -4,6 +4,7 @@ import { difficultyText, fearText, formatDate, formatRemaining, playersText } fr
 import type { Theme } from "../lib/types";
 import ThemePoster from "./ThemePoster";
 import Icon from "./Icon";
+import { openLogin } from "./Login";
 import { Dots, Seal } from "./Bits";
 
 export default function ThemeSheet({ theme, onClose }: { theme: Theme; onClose: () => void }) {
@@ -48,7 +49,7 @@ export default function ThemeSheet({ theme, onClose }: { theme: Theme; onClose: 
             {session ? (
               <Link className="btn wide" to={`/records/new?theme=${encodeURIComponent(theme.id)}`}><Icon name="plus" />{mine.length ? "한 번 더 기록하기" : "기록하기"}</Link>
             ) : (
-              <Link to="/login" className="btn wide">로그인하고 기록하기</Link>
+              <button type="button" className="btn wide" onClick={openLogin}>로그인하고 기록하기</button>
             )}
           </>
         )}

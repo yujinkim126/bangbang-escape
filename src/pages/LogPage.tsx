@@ -6,6 +6,7 @@ import { formatRemaining } from "../lib/format";
 import Recommendations from "../components/Recommendations";
 import Icon from "../components/Icon";
 import { toast } from "../components/Toast";
+import { openLogin } from "../components/Login";
 import { Seal, Thumb } from "../components/Bits";
 
 const monthKey = (iso: string) => { const d = new Date(iso); return `${d.getFullYear()}년 ${d.getMonth() + 1}월`; };
@@ -40,7 +41,7 @@ export default function LogPage() {
     return (
       <div className="page narrow">
         <div className="page-head"><div><h1>방탈출 기록장</h1><p>로그인하면 플레이한 테마를 기록하고 뱃지를 모을 수 있어요.</p></div></div>
-        <Link to="/login" className="btn wide">로그인</Link>
+        <button type="button" className="btn wide" onClick={openLogin}>로그인</button>
       </div>
     );
   }
