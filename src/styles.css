@@ -506,18 +506,13 @@ button:focus-visible,a:focus-visible,select:focus-visible { outline:3px solid va
 @media(prefers-reduced-motion:reduce){.theme-card{transition:none;}}
 
 /* Dedicated record page and optional licensed posters */
-.record-page{max-width:850px}.record-page-form,.record-picker{padding:28px}.record-selection{display:flex;justify-content:space-between;gap:16px;margin-bottom:24px;color:var(--muted)}.theme-poster{width:100%;height:190px;object-fit:cover;border-radius:12px;margin-bottom:16px}.poster-placeholder{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;box-sizing:border-box;padding:22px;background:linear-gradient(135deg,#e6f1ee,#f2f5fa);color:#315851;text-align:left}.poster-placeholder strong{font-size:22px;line-height:1.35}.poster-placeholder span{font-size:11px;letter-spacing:1px}.sheet .theme-poster{height:260px;margin-top:16px}.record-page .record-form{max-width:none}@media(max-width:600px){.record-page-form,.record-picker{padding:20px}.nav-link{font-size:12px}.theme-poster{height:165px}}
+.record-page-form,.record-picker{padding:28px}.record-selection{display:flex;justify-content:space-between;gap:16px;margin-bottom:24px;color:var(--muted)}.theme-poster{width:100%;height:190px;object-fit:cover;border-radius:12px;margin-bottom:16px}.sheet .theme-poster{height:260px;margin-top:16px}.record-page .record-form{max-width:none}@media(max-width:600px){.record-page-form,.record-picker{padding:20px}.nav-link{font-size:12px}.theme-poster{height:165px}}
 
 /* Compact catalog cards for comparing several themes at once. */
-.discover-page { max-width:1480px; }
 .discovery-layout { grid-template-columns:220px minmax(0,1fr); gap:24px; }
 .theme-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
 .theme-card { min-width:0; padding:14px; gap:7px; }
 .theme-card .theme-poster { height:108px; margin-bottom:4px; border-radius:9px; }
-.theme-card .poster-placeholder { padding:12px; }
-.theme-card .poster-placeholder strong { font-size:15px; line-height:1.4; }
-.theme-card .poster-placeholder span { font-size:9px; letter-spacing:0; }
-.theme-card .poster-placeholder span:last-child { display:none; }
 .theme-card-top { margin-bottom:0; min-height:22px; }
 .theme-card .theme-name { font-size:16px; line-height:1.45; }
 .theme-card .theme-store { font-size:11px; line-height:1.5; overflow-wrap:anywhere; }
@@ -541,8 +536,6 @@ button:focus-visible,a:focus-visible,select:focus-visible { outline:3px solid va
  .theme-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
  .theme-card { padding:11px; border-radius:13px; }
  .theme-card .theme-poster { height:90px; }
- .theme-card .poster-placeholder { padding:10px; }
- .theme-card .poster-placeholder strong { font-size:13px; }
  .theme-card .theme-name { font-size:14px; }
  .theme-card .area-label { font-size:10px; }
  .theme-card .card-arrow { font-size:15px; }
@@ -551,15 +544,11 @@ button:focus-visible,a:focus-visible,select:focus-visible { outline:3px solid va
 }
 
 /* 기록하기 — 테마 고르기 카드 */
-.record-options { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:12px; }
+.record-options { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:12px; }
 .record-option { display:flex; flex-direction:column; align-items:flex-start; gap:4px; min-width:0; padding:12px; border:1px solid var(--line); border-radius:14px; background:var(--surface); color:inherit; text-align:left; cursor:pointer; transition:border-color .15s, box-shadow .15s; }
 .record-option:hover { border-color:var(--primary); box-shadow:0 5px 18px color-mix(in srgb,var(--primary) 8%,transparent); }
 .record-option:active { transform:scale(.985); }
 .record-option .theme-poster { height:110px; margin-bottom:6px; border-radius:9px; }
-.record-option .poster-placeholder { padding:12px; }
-.record-option .poster-placeholder strong { font-size:15px; }
-.record-option .poster-placeholder span { font-size:9px; letter-spacing:0; }
-.record-option .poster-placeholder span:last-child { display:none; }
 .record-option .theme-name { font-size:15px; line-height:1.4; }
 .record-option .theme-store { font-size:12px; color:var(--ink-3); overflow-wrap:anywhere; }
 .record-more { display:block; width:100%; margin-top:16px; }
@@ -567,7 +556,30 @@ button:focus-visible,a:focus-visible,select:focus-visible { outline:3px solid va
   .record-options { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
   .record-option { padding:10px; }
   .record-option .theme-poster { height:88px; }
-  .record-option .poster-placeholder strong { font-size:13px; }
   .record-option .theme-name { font-size:14px; }
 }
 @media (prefers-reduced-motion:reduce) { .record-option { transition:none; } }
+
+/* 모든 페이지 같은 폭 — 상단 메뉴(1160px)와 맞춤 */
+.page, .discover-page { max-width:1216px; padding-inline:28px; }
+.page.narrow { max-width:440px; }
+.record-page-form { max-width:760px; }
+@media (max-width:900px) { .record-options { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (max-width:599px) { .page, .discover-page { padding-inline:16px; } .record-options { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* 포스터 없을 때 장르 커버 (--h: 장르 색상) */
+.poster-placeholder { --h:172; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; align-items:flex-start; box-sizing:border-box; padding:12px;
+  background:radial-gradient(120% 90% at 100% 100%, hsl(calc(var(--h) + 25) 75% 84%), transparent 60%), linear-gradient(150deg, hsl(var(--h) 70% 95%), hsl(var(--h) 60% 89%));
+  color:hsl(var(--h) 40% 30%); text-align:left; }
+.poster-genre { font-size:11px; font-weight:700; padding:3px 8px; border-radius:99px; background:hsl(var(--h) 60% 100% / .7); }
+.poster-emoji { align-self:flex-end; font-size:44px; line-height:1; filter:drop-shadow(0 4px 8px hsl(var(--h) 50% 30% / .25)); }
+.sheet .poster-emoji { font-size:72px; }
+.sheet .poster-placeholder { padding:18px; }
+@media (max-width:599px) { .poster-emoji { font-size:34px; } .poster-genre { font-size:10px; } }
+@media (prefers-color-scheme: dark) {
+  .poster-placeholder { background:radial-gradient(120% 90% at 100% 100%, hsl(calc(var(--h) + 25) 45% 30%), transparent 60%), linear-gradient(150deg, hsl(var(--h) 30% 20%), hsl(var(--h) 35% 26%)); color:hsl(var(--h) 60% 85%); }
+  .poster-genre { background:hsl(var(--h) 30% 10% / .45); }
+}
+
+/* 카드 이미지는 포스터 비율(3:4)로 */
+.record-option .theme-poster, .theme-card .theme-poster { height:auto; aspect-ratio:3/4; object-fit:cover; }

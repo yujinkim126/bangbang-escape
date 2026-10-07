@@ -7,7 +7,7 @@
 ## 스택
 - React 18 + Vite 5 + TypeScript, react-router-dom 6
 - Supabase (프로젝트 `escape-log`, ref `akgjspijniaudapdcjda`, 리전 서울) — DB·로그인(이메일 매직링크)
-- 지도: react-leaflet + OpenStreetMap 타일 (키 불필요, 원본 컬러 그대로). 카카오맵 교체 예정
+- 지도: react-leaflet + OpenStreetMap 타일 (키 불필요, 원본 컬러 그대로. 핀은 파랑). 카카오맵 교체 예정
   (CARTO 타일은 이제 API 키가 필요해서 안 씀)
 - 테스트: vitest (`src/lib/badges.test.ts`)
 
@@ -38,7 +38,11 @@
 - 진행률은 저장하지 않고 records에서 매번 계산. 새로 딴 뱃지만 `user_badges`에 기록
 
 ## 테마 데이터 수집 원칙 (중요)
-- 매장 **공식 사이트의 사실 정보만** (이름, 시간, 인원, 난이도, 장르). 시놉시스·포스터는 저작물이라 저장 안 함 → `source_url`로 링크
+- 매장 **공식 사이트의 사실 정보만** (이름, 시간, 인원, 난이도, 장르). 시놉시스는 저작물이라 저장 안 함 → `source_url`로 링크
+- 포스터: 공식 사이트 이미지 **주소만** `poster_url`에 링크 (파일 복사·저장 안 함). 사용자 결정(2026-10-07).
+  순서: `node data/find-posters.mjs`(정적 HTML, 이름↔이미지 상호 최근접) → `node data/find-posters-extra.mjs`(셜록 /theme, 룸즈에이 스크립트, `data/poster-browser-pairs.json` = JS로 그리는 사이트를 브라우저로 띄워 읽은 이름·주소) → `node data/apply-posters.mjs`.
+  robots.txt·크롤링 금지 사이트는 건너뜀. 결과는 demo-catalog.json + `sql/11-theme-posters.sql`. 매장이 내려달라고 하면 바로 null로. 포스터 없는 테마는 장르 커버(`ThemePoster.tsx`)
+  https가 안 되는 매장 이미지는 https 페이지에서 깨져서 `api/poster.js`(Vercel 함수)로 중계. 허용 목록 `api/_poster-allow.js`는 apply-posters가 생성. vercel.json rewrite에서 `api/` 제외 필수
 - 빠방·전국방탈출·잼핏 같은 **다른 방탈출 서비스 데이터는 긁지 않는다**
 - 네이버 예약 페이지, 카카오맵 장소 상세 페이지도 긁지 않는다 (약관)
 - 사이트에 크롤링 금지 문구가 있으면 수집 안 함 (예: 도어이스케이프)
