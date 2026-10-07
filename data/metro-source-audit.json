@@ -1,0 +1,3401 @@
+{
+  "checked_at": "2026-10-06",
+  "stores": [
+    {
+      "key": "metro-roomsa:43",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 안양범계점",
+      "address": "경기 안양시 동안구 호계동 1041-2, 5층",
+      "lat": 37.3910863746175,
+      "lng": 126.952801757022,
+      "phone": "031-388-4127",
+      "kakao_id": null,
+      "catalog_id": "0db44312-637b-598c-a7a4-973727dd321c"
+    },
+    {
+      "key": "metro-roomsa:44",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 일산 웨스턴돔점",
+      "address": "경기 고양시 일산동구 장항동 847, 웅신아트프라자 312호",
+      "lat": 37.6577585208267,
+      "lng": 126.773752312727,
+      "phone": "031-901-2444",
+      "kakao_id": null,
+      "catalog_id": "9e8abc3c-ad40-5d47-abc3-c230a9434e51"
+    },
+    {
+      "key": "metro-roomsa:45",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 일산 라페스타점",
+      "address": "경기 고양시 일산동구 장항동 741, 로데오존프라자 3층",
+      "lat": 37.6629328650761,
+      "lng": 126.766457144179,
+      "phone": "031-923-7077",
+      "kakao_id": null,
+      "catalog_id": "30d6f172-d5a0-5b97-ae68-67f8c8b03b7a"
+    },
+    {
+      "key": "metro-roomsa:46",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 의정부점",
+      "address": "경기 의정부시 의정부동 158-10, 4층",
+      "lat": 37.7405342821162,
+      "lng": 127.050148612977,
+      "phone": "031-821-0446",
+      "kakao_id": null,
+      "catalog_id": "bb676ae2-19b6-5296-a97a-646e2e4b272f"
+    },
+    {
+      "key": "metro-roomsa:47",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 수원역점",
+      "address": "경기 수원시 팔달구 매산로1가 30-1, 3층",
+      "lat": 37.2677750181784,
+      "lng": 127.001851213812,
+      "phone": "031-246-1114",
+      "kakao_id": null,
+      "catalog_id": "6624e4bb-b6d1-555d-a28c-2679eafa7d00"
+    },
+    {
+      "key": "metro-roomsa:48",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 수원역 2호점",
+      "address": "경기 수원시 팔달구 매산로1가 40-1, 3층",
+      "lat": 37.2680819699689,
+      "lng": 127.003355310468,
+      "phone": "031-256-2220",
+      "kakao_id": null,
+      "catalog_id": "44fb5860-b0a4-5922-ae8c-a0ae8cfa4531"
+    },
+    {
+      "key": "metro-roomsa:49",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 대전둔산점",
+      "address": "대전 서구 둔산동 1063, 태형빌딩 7층",
+      "lat": 36.3503804736171,
+      "lng": 127.376374750689,
+      "phone": "042-476-9200",
+      "kakao_id": null,
+      "catalog_id": "8fbf5b85-b746-5152-a121-411649b60c6f"
+    },
+    {
+      "key": "metro-roomsa:50",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 대전은행점",
+      "address": "대전 중구 은행동 33-2, 4층",
+      "lat": 36.3280569348902,
+      "lng": 127.428246742502,
+      "phone": "042-223-2226",
+      "kakao_id": null,
+      "catalog_id": "57ccd318-4961-5883-acd4-51f7ccf962fb"
+    },
+    {
+      "key": "metro-roomsa:51",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 부산남포점",
+      "address": "부산 중구 창선동2가 46-1",
+      "lat": 35.0991841004644,
+      "lng": 129.028900029998,
+      "phone": "010-2441-2870",
+      "kakao_id": null,
+      "catalog_id": "10645046-de3f-5d8c-ac26-e907bb0f5160"
+    },
+    {
+      "key": "metro-roomsa:52",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 부산서면점",
+      "address": "부산 부산진구 부전동 198-1 3층",
+      "lat": 35.1538325644502,
+      "lng": 129.060704323274,
+      "phone": "051-816-4147",
+      "kakao_id": null,
+      "catalog_id": "6a603fc9-5edb-532b-af13-28c7a781fcbd"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 광주수완점",
+      "address": "광주 광산구 수완동 1096 잭슨스테이크 건물5층",
+      "lat": 35.1914015216876,
+      "lng": 126.824816073601,
+      "phone": "062-959-8069",
+      "kakao_id": null,
+      "catalog_id": "8f69e733-c9c3-525d-a12f-add28792348a"
+    },
+    {
+      "key": "metro-roomsa:74",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 광주수완 2호점",
+      "address": "광주 광산구 장신로 76 5층",
+      "lat": 35.1904857623632,
+      "lng": 126.818341598506,
+      "phone": "062-953-8069",
+      "kakao_id": null,
+      "catalog_id": "51d10f68-7020-5ee4-aa99-de588ea2df6b"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 광주상무점",
+      "address": "광주 서구 상무번영로 37 나우빌딩 6층",
+      "lat": 35.153093069773,
+      "lng": 126.852728529571,
+      "phone": "062-383-8069",
+      "kakao_id": null,
+      "catalog_id": "df242dcf-9f55-558f-abe3-27aa28832867"
+    },
+    {
+      "key": "metro-roomsa:55",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 대구동성로점",
+      "address": "대구 중구 공평동 34-2, 4층",
+      "lat": 35.8688831504242,
+      "lng": 128.59616400547,
+      "phone": "0507-1389-3838",
+      "kakao_id": null,
+      "catalog_id": "46b8fe3f-edee-5ef9-a0f0-e38280dfc9d2"
+    },
+    {
+      "key": "metro-roomsa:56",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 동성로2호점",
+      "address": "대구 중구 삼덕동1가 18-1, 4층",
+      "lat": 35.8678238591416,
+      "lng": 128.597560083589,
+      "phone": "053-253-3853",
+      "kakao_id": null,
+      "catalog_id": "3d20c6e8-74bb-5f27-a878-0dbe6873be67"
+    },
+    {
+      "key": "metro-roomsa:57",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 동성로 아카데미점",
+      "address": "대구 중구 사일동 54-1, 3층",
+      "lat": 35.8699787640862,
+      "lng": 128.594935907798,
+      "phone": "0507-1302-4147",
+      "kakao_id": null,
+      "catalog_id": "85b7a225-f69b-5b45-ae21-f6190d489510"
+    },
+    {
+      "key": "metro-roomsa:83",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 대구스테이지점",
+      "address": "대구 중구 동성로2길 28 3층",
+      "lat": 35.8671434131275,
+      "lng": 128.596563314869,
+      "phone": "053-252-7055",
+      "kakao_id": null,
+      "catalog_id": "6354fb50-3e0f-51a0-a4f9-d93df79288c3"
+    },
+    {
+      "key": "metro-roomsa:58",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 포항점",
+      "address": "경북 포항시 북구 상원동 462-5, 스타타워 5층",
+      "lat": 36.0374250005685,
+      "lng": 129.365035087882,
+      "phone": "054-247-4147",
+      "kakao_id": null,
+      "catalog_id": "63317dfe-f970-5cf8-a95e-37472ba27686"
+    },
+    {
+      "key": "metro-roomsa:59",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 부평점",
+      "address": "인천 부평구 부평동 199-24, 4층",
+      "lat": 37.4937492704315,
+      "lng": 126.723291572164,
+      "phone": "032-515-1117",
+      "kakao_id": null,
+      "catalog_id": "1a44bac1-1e52-5841-a447-c62c65e610bb"
+    },
+    {
+      "key": "metro-roomsa:69",
+      "brand": "룸즈에이",
+      "name": "룸즈에이 부평 2호점",
+      "address": "인천 부평구 부평문화로 75, 3층",
+      "lat": 37.4942893134996,
+      "lng": 126.724710438321,
+      "phone": "032-523-1117",
+      "kakao_id": null,
+      "catalog_id": "0ef0839d-1c98-5211-a59d-2cd0a914c6c8"
+    },
+    {
+      "key": "metro-pw:8",
+      "brand": "플레이더월드",
+      "name": "플레이더월드 동성로점",
+      "address": "대구 중구 동성로5길 43, 3층",
+      "lat": 35.8677364893329,
+      "lng": 128.596967463869,
+      "phone": "053-256-7503",
+      "kakao_id": null,
+      "catalog_id": "f9163a4f-8a25-5204-a1ce-d6b094912542"
+    },
+    {
+      "key": "metro-pw:7",
+      "brand": "플레이더월드",
+      "name": "플레이더월드 부평점",
+      "address": "인천 부평구 부평문화로80번길 31, 3층",
+      "lat": 37.4929608648717,
+      "lng": 126.724436575293,
+      "phone": "032-212-0868",
+      "kakao_id": null,
+      "catalog_id": "facf4ea0-f849-53e8-a5d2-ff4cd039ccef"
+    },
+    {
+      "key": "metro-pw:19",
+      "brand": "플레이더월드",
+      "name": "플레이더월드 평택점",
+      "address": "경기 평택시 평택동 291-2 5층 스타로데오빌딩",
+      "lat": 36.9919776029782,
+      "lng": 127.088974142354,
+      "phone": "031-654-3613",
+      "kakao_id": null,
+      "catalog_id": "5f225b61-cb2d-5536-ac38-a151fb6e167e"
+    },
+    {
+      "key": "secret:3",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 서면점",
+      "address": "부산 부산진구 중앙대로 700 (부전동) 지하1층",
+      "lat": null,
+      "lng": null,
+      "phone": "070-7543-0820",
+      "kakao_id": null,
+      "catalog_id": "bd72971e-5c81-52a5-a293-cb1e9ab35664"
+    },
+    {
+      "key": "secret:4",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 대학로점",
+      "address": "서울 종로구 대학로 130 (동숭동, 맥도널드) 지하 1층",
+      "lat": null,
+      "lng": null,
+      "phone": "02-765-8899",
+      "kakao_id": "1538791500",
+      "existing_id": "s1538791500",
+      "catalog_id": "s1538791500"
+    },
+    {
+      "key": "secret:5",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 건대점",
+      "address": "서울 광진구 아차산로 235 (화양동) 3층",
+      "lat": null,
+      "lng": null,
+      "phone": "02-499-1119",
+      "kakao_id": "996505136",
+      "existing_id": "s996505136",
+      "catalog_id": "s996505136"
+    },
+    {
+      "key": "secret:6",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 동성로점",
+      "address": "대구 중구 동성로5길 55 (삼덕동1가) 4층",
+      "lat": null,
+      "lng": null,
+      "phone": "070-8823-0070",
+      "kakao_id": null,
+      "catalog_id": "5cfa4526-25f4-545f-a3ef-7837111af3ee"
+    },
+    {
+      "key": "secret:7",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 미드나잇 합정점",
+      "address": "서울 마포구 독막로7길 27 (서교동) 3층, 비밀의 화원 (아산빌딩)",
+      "lat": null,
+      "lng": null,
+      "phone": "02-3144-6977",
+      "kakao_id": "1811986888",
+      "existing_id": "s1811986888",
+      "catalog_id": "s1811986888"
+    },
+    {
+      "key": "secret:10",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 광주점",
+      "address": "광주 동구 충장로 90 (충장로2가, 갤러리존) 4층",
+      "lat": null,
+      "lng": null,
+      "phone": "062-226-7778",
+      "kakao_id": null,
+      "catalog_id": "276c00e5-65fd-59e1-a934-b74c9f325edf"
+    },
+    {
+      "key": "secret:11",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 시네마틱 혜화점",
+      "address": "서울 종로구 대명길 9 (명륜4가) 지하2층 방탈출",
+      "lat": null,
+      "lng": null,
+      "phone": "02-763-3289",
+      "kakao_id": "587380780",
+      "existing_id": "s587380780",
+      "catalog_id": "s587380780"
+    },
+    {
+      "key": "secret:12",
+      "brand": "비밀의화원",
+      "name": "비밀의화원 전주점",
+      "address": "전북 전주시 완산구 문화광장로 2 (고사동) 지하층",
+      "lat": null,
+      "lng": null,
+      "phone": "063-232-0087",
+      "kakao_id": null,
+      "catalog_id": "fbc67f66-ddb1-5221-a5b3-1926e627170e"
+    },
+    {
+      "key": "golden:1",
+      "brand": "황금열쇠",
+      "name": "황금열쇠 대구동성로점(본점)",
+      "address": "대구광역시 중구 봉산동 22-1",
+      "lat": null,
+      "lng": null,
+      "phone": "053-428-0045",
+      "kakao_id": null,
+      "catalog_id": "d028e513-12c2-5213-a758-66ecef11f1ab"
+    },
+    {
+      "key": "golden:11",
+      "brand": "황금열쇠",
+      "name": "황금열쇠 대구동성로2호점(더킹)",
+      "address": "대구광역시 중구 동성로6길 36, 짱오락실 4층",
+      "lat": null,
+      "lng": null,
+      "phone": "053-252-4645",
+      "kakao_id": null,
+      "catalog_id": "14b30f14-5b86-5d00-a271-d94e5977c785"
+    },
+    {
+      "key": "sherlock:84",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 대구동성로점",
+      "address": "대구광역시 중구 동성로5길 45. 3층 셜록홈즈 대구동성로점",
+      "lat": 35.8676703,
+      "lng": 128.5970767,
+      "phone": "053.253.2225",
+      "kakao_id": null,
+      "catalog_id": "c10ee2ca-6836-5a91-a1fd-0d8ac2a62b3b"
+    },
+    {
+      "key": "sherlock:115",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 대전둔산점",
+      "address": "대전광역시 서구 대덕대로185번길 23, 4층",
+      "lat": 36.3501474,
+      "lng": 127.3760897,
+      "phone": "010.6245.0659",
+      "kakao_id": null,
+      "catalog_id": "f8bae91b-70aa-5529-a455-5099711da0f9"
+    },
+    {
+      "key": "sherlock:103",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 대전은행점",
+      "address": "대전광역시 중구 대종로488번길 42 2층",
+      "lat": 36.3287831,
+      "lng": 127.428443,
+      "phone": "010.7591.1896",
+      "kakao_id": null,
+      "catalog_id": "55ee9391-4190-55b8-aa1e-5edad625c784"
+    },
+    {
+      "key": "sherlock:95",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 부산 아트몰링",
+      "address": "부산광역시 사하구 하단동 526-6 아트몰링 9F 셜록홈즈",
+      "lat": 35.1066952,
+      "lng": 128.9663791,
+      "phone": "051.999.7460",
+      "kakao_id": null,
+      "catalog_id": "00f1f602-5aa5-52ff-aa14-1b40412b3006"
+    },
+    {
+      "key": "sherlock:91",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 부산기장정관점",
+      "address": "부산광역시 기장군 정관읍 정관중앙로 45 1309호",
+      "lat": 35.3211949,
+      "lng": 129.1782764,
+      "phone": "051.921.2465",
+      "kakao_id": null,
+      "catalog_id": "1aadac61-0735-5d39-a583-939fb1b4ca78"
+    },
+    {
+      "key": "sherlock:13",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 구월인천점",
+      "address": "인천광역시 남동구 성말로 10 (구월동 1463) 효명프라자 5층, 셜록홈즈 구월인천점",
+      "lat": 37.4451996,
+      "lng": 126.7015395,
+      "phone": "032.437.4567",
+      "kakao_id": null,
+      "catalog_id": "e139eded-1cb2-5292-aab3-202c8e76c3df"
+    },
+    {
+      "key": "sherlock:101",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 부평2호점",
+      "address": "인천광역시 부평구 시장로 19 로터스프라자 7층 7층 셜록홈즈 부평2호점",
+      "lat": 37.4929432,
+      "lng": 126.7247709,
+      "phone": "032.503.8079",
+      "kakao_id": null,
+      "catalog_id": "9df2a0cd-3012-58d9-a0af-b31d8bea2132"
+    },
+    {
+      "key": "sherlock:45",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 부평점",
+      "address": "인천광역시 부평구 부평문화로77, 3층(부평동)",
+      "lat": 37.4943185,
+      "lng": 126.7249213,
+      "phone": "032.503.8098",
+      "kakao_id": null,
+      "catalog_id": "585d8aaa-49a9-546d-ae49-ff833fb027c0"
+    },
+    {
+      "key": "sherlock:105",
+      "brand": "셜록홈즈",
+      "name": "셜록홈즈 송도트리플점",
+      "address": "인천광역시 연수구 송도과학로16번길 33-4, D동 204,205호(송도동, 송도 트리플스트리트)",
+      "lat": 37.3786561,
+      "lng": 126.6628323,
+      "phone": "032.817.2025",
+      "kakao_id": null,
+      "catalog_id": "2aab792f-3c4c-5c28-a6e5-316c7d78017d"
+    }
+  ],
+  "facts": [
+    {
+      "key": "metro-roomsa:43",
+      "name": "띵가띵가",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "코믹"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "띵가띵가"
+    },
+    {
+      "key": "metro-roomsa:43",
+      "name": "뽀득뽀득",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "목욕"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "뽀득뽀득"
+    },
+    {
+      "key": "metro-roomsa:43",
+      "name": "커밍순",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스토리"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "커밍순"
+    },
+    {
+      "key": "metro-roomsa:44",
+      "name": "뽀득뽀득",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "목욕"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "뽀득뽀득"
+    },
+    {
+      "key": "metro-roomsa:44",
+      "name": "반짝반짝",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "탈취"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "반짝반짝"
+    },
+    {
+      "key": "metro-roomsa:44",
+      "name": "시크릿에이전트",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "수사"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "시크릿에이전트"
+    },
+    {
+      "key": "metro-roomsa:44",
+      "name": "이상한 돈가스",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "코믹"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "이상한 돈가스"
+    },
+    {
+      "key": "metro-roomsa:44",
+      "name": "타임키퍼",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "시간",
+        "판타지"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "타임키퍼"
+    },
+    {
+      "key": "metro-roomsa:45",
+      "name": "행방불냥",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "고양이",
+        "큐트"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "행방불냥"
+    },
+    {
+      "key": "metro-roomsa:45",
+      "name": "낭랑카페",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "힐링",
+        "판타지"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "낭랑카페"
+    },
+    {
+      "key": "metro-roomsa:45",
+      "name": "히어로 아카데미",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "히어로",
+        "아케이드"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "히어로 아카데미"
+    },
+    {
+      "key": "metro-roomsa:45",
+      "name": "안개꽃",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "로맨스"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "안개꽃"
+    },
+    {
+      "key": "metro-roomsa:46",
+      "name": "이상한 돈가스",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "코믹"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "이상한 돈가스"
+    },
+    {
+      "key": "metro-roomsa:46",
+      "name": "뽀득뽀득",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "목욕"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "뽀득뽀득"
+    },
+    {
+      "key": "metro-roomsa:46",
+      "name": "반짝반짝",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "탈취"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "반짝반짝"
+    },
+    {
+      "key": "metro-roomsa:46",
+      "name": "낭랑카페",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "힐링",
+        "판타지"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "낭랑카페"
+    },
+    {
+      "key": "metro-roomsa:46",
+      "name": "타임키퍼",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "시간",
+        "판타지"
+      ],
+      "difficulty": 3.5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "타임키퍼"
+    },
+    {
+      "key": "metro-roomsa:47",
+      "name": "필활",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "필활"
+    },
+    {
+      "key": "metro-roomsa:47",
+      "name": "띵가띵가",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "띵가띵가"
+    },
+    {
+      "key": "metro-roomsa:47",
+      "name": "전지적 작가 시점",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "전지적 작가 시점"
+    },
+    {
+      "key": "metro-roomsa:47",
+      "name": "우당탕탕",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "우당탕탕"
+    },
+    {
+      "key": "metro-roomsa:48",
+      "name": "호텔 캘리포니아",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "호텔 캘리포니아"
+    },
+    {
+      "key": "metro-roomsa:48",
+      "name": "귀빈(손님대접)",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "귀빈(손님대접)"
+    },
+    {
+      "key": "metro-roomsa:48",
+      "name": "슬기로운 지구생활(70분)",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "슬기로운 지구생활(70분)"
+    },
+    {
+      "key": "metro-roomsa:48",
+      "name": "평화로운 A마트 (70분)",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "평화로운 A마트 (70분)"
+    },
+    {
+      "key": "metro-roomsa:49",
+      "name": "뜻밖의 여행",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "뜻밖의 여행"
+    },
+    {
+      "key": "metro-roomsa:49",
+      "name": "신의여인들",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스토리"
+      ],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "신의여인들"
+    },
+    {
+      "key": "metro-roomsa:49",
+      "name": "시크릿 에이젼트",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "수사"
+      ],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "시크릿 에이젼트"
+    },
+    {
+      "key": "metro-roomsa:49",
+      "name": "귀빈(손님대접)",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "설화",
+        "괴담"
+      ],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "귀빈(손님대접)"
+    },
+    {
+      "key": "metro-roomsa:49",
+      "name": "7 DAYS",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미션",
+        "실험지원"
+      ],
+      "difficulty": 5,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "7 DAYS"
+    },
+    {
+      "key": "metro-roomsa:49",
+      "name": "THINKABLE (씽커블) 40분",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미션",
+        "문제해결"
+      ],
+      "difficulty": 3.5,
+      "duration_min": 40,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "THINKABLE (씽커블) 40분"
+    },
+    {
+      "key": "metro-roomsa:50",
+      "name": "히어로 아카데미",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": null,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "히어로 아카데미"
+    },
+    {
+      "key": "metro-roomsa:50",
+      "name": "낭랑카페",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": null,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "낭랑카페"
+    },
+    {
+      "key": "metro-roomsa:50",
+      "name": "안개꽃",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": null,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "안개꽃"
+    },
+    {
+      "key": "metro-roomsa:50",
+      "name": "기억술사",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [],
+      "difficulty": null,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "기억술사"
+    },
+    {
+      "key": "metro-roomsa:51",
+      "name": "제인하우스",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "공포"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "제인하우스"
+    },
+    {
+      "key": "metro-roomsa:51",
+      "name": "안개꽃",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "로맨스"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "안개꽃"
+    },
+    {
+      "key": "metro-roomsa:51",
+      "name": "행방불냥",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "고양이",
+        "큐트"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "행방불냥"
+    },
+    {
+      "key": "metro-roomsa:51",
+      "name": "시크릿 에이전트",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "수사"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "시크릿 에이전트"
+    },
+    {
+      "key": "metro-roomsa:51",
+      "name": "낭랑카페",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "힐링",
+        "판타지"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "낭랑카페"
+    },
+    {
+      "key": "metro-roomsa:51",
+      "name": "초콜릿 팩토리",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "환상",
+        "판타지"
+      ],
+      "difficulty": 5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "초콜릿 팩토리"
+    },
+    {
+      "key": "metro-roomsa:52",
+      "name": "요정들의 술집",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "코믹",
+        "판타지"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "요정들의 술집"
+    },
+    {
+      "key": "metro-roomsa:52",
+      "name": "히어로 아카데미",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "히어로",
+        "아케이드"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "히어로 아카데미"
+    },
+    {
+      "key": "metro-roomsa:52",
+      "name": "프레임 하이커",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "판타지",
+        "꿈"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "프레임 하이커"
+    },
+    {
+      "key": "metro-roomsa:52",
+      "name": "퍼펙트 플랜",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "해킹"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "퍼펙트 플랜"
+    },
+    {
+      "key": "metro-roomsa:52",
+      "name": "너와 나의 이야기",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "스토리"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "너와 나의 이야기"
+    },
+    {
+      "key": "metro-roomsa:52",
+      "name": "아직 버리지 못한 지갑",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "스토리"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "아직 버리지 못한 지갑"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "name": "요정들의 술집",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "코믹",
+        "판타지"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "요정들의 술집"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "name": "낭랑카페",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "힐링",
+        "판타지"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "낭랑카페"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "name": "히어로 아카데미",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "히어로",
+        "아케이드"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "히어로 아카데미"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "name": "뽀득뽀득",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "목욕"
+      ],
+      "difficulty": 5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "뽀득뽀득"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "name": "너와 나의 이야기",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "스토리"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "너와 나의 이야기"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "name": "시크릿 에이전트",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "수사"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "시크릿 에이전트"
+    },
+    {
+      "key": "metro-roomsa:53",
+      "name": "방과 후",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "공포",
+        "스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "방과 후"
+    },
+    {
+      "key": "metro-roomsa:74",
+      "name": "놈즈 : 더 비기닝",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "탐문",
+        "수사"
+      ],
+      "difficulty": 4,
+      "duration_min": 80,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "놈즈 : 더 비기닝"
+    },
+    {
+      "key": "metro-roomsa:74",
+      "name": "The Last Dance",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미션"
+      ],
+      "difficulty": 4,
+      "duration_min": 80,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "The Last Dance"
+    },
+    {
+      "key": "metro-roomsa:74",
+      "name": "아이언 게이트 프리즌",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "탈옥"
+      ],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "아이언 게이트 프리즌"
+    },
+    {
+      "key": "metro-roomsa:74",
+      "name": "미스틱 클럽",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미스터리",
+        "오컬트",
+        "공포"
+      ],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "미스틱 클럽"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "띵가띵가",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "코믹"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "띵가띵가"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "이상한 돈가스",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "코믹"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "이상한 돈가스"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "뜻밖의 여행",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "여행"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "뜻밖의 여행"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "아이돌 남친",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "로맨스",
+        "스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "아이돌 남친"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "그레이스 호텔",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "공포",
+        "스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "그레이스 호텔"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "커밍순",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스토리"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "커밍순"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "이 소리 저만 들리나요?",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "요정",
+        "판타지"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "이 소리 저만 들리나요?"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "전지적 작가 시점",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스토리",
+        "로맨스"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "전지적 작가 시점"
+    },
+    {
+      "key": "metro-roomsa:54",
+      "name": "멍사탕",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "코믹",
+        "판타지"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "멍사탕"
+    },
+    {
+      "key": "metro-roomsa:55",
+      "name": "뽀득뽀득",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "목욕"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "뽀득뽀득"
+    },
+    {
+      "key": "metro-roomsa:55",
+      "name": "노블리스트",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스토리",
+        "스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "노블리스트"
+    },
+    {
+      "key": "metro-roomsa:55",
+      "name": "취중진담",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "스토리"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "취중진담"
+    },
+    {
+      "key": "metro-roomsa:55",
+      "name": "반짝반짝",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "탈취"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "반짝반짝"
+    },
+    {
+      "key": "metro-roomsa:55",
+      "name": "아이돌 남친",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "로맨스 스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "아이돌 남친"
+    },
+    {
+      "key": "metro-roomsa:56",
+      "name": "금 나와라 뚝딱",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "사극",
+        "잠입"
+      ],
+      "difficulty": 4,
+      "duration_min": 120,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "금 나와라 뚝딱"
+    },
+    {
+      "key": "metro-roomsa:56",
+      "name": "여우골",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "설화",
+        "괴담"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "여우골"
+    },
+    {
+      "key": "metro-roomsa:56",
+      "name": "커밍순",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스토리"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "커밍순"
+    },
+    {
+      "key": "metro-roomsa:56",
+      "name": "띵가띵가",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "코믹"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "띵가띵가"
+    },
+    {
+      "key": "metro-roomsa:56",
+      "name": "그레이스 호텔",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "공포",
+        "스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "그레이스 호텔"
+    },
+    {
+      "key": "metro-roomsa:56",
+      "name": "아이덴티티",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "첩보",
+        "코믹"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "아이덴티티"
+    },
+    {
+      "key": "metro-roomsa:57",
+      "name": "필활",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "역사",
+        "잠입"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "필활"
+    },
+    {
+      "key": "metro-roomsa:57",
+      "name": "평화로운 에이마트",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미션",
+        "활동성"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "평화로운 에이마트"
+    },
+    {
+      "key": "metro-roomsa:57",
+      "name": "우당탕탕",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "큐트",
+        "으스스"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "우당탕탕"
+    },
+    {
+      "key": "metro-roomsa:57",
+      "name": "슬기로운 지구생활",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미션",
+        "특수절도"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "슬기로운 지구생활"
+    },
+    {
+      "key": "metro-roomsa:57",
+      "name": "명부에 점을 찍으라",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "천만 영화",
+        "시사회"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "명부에 점을 찍으라"
+    },
+    {
+      "key": "metro-roomsa:83",
+      "name": "메가 게임 (MEGA GAME)",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "아케이드",
+        "미션"
+      ],
+      "difficulty": null,
+      "duration_min": 90,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "메가 게임 (MEGA GAME)"
+    },
+    {
+      "key": "metro-roomsa:83",
+      "name": "우정 게임",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "아케이드",
+        "미션"
+      ],
+      "difficulty": null,
+      "duration_min": 90,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "우정 게임"
+    },
+    {
+      "key": "metro-roomsa:83",
+      "name": "33: DOOR RUN (도어런)",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "아케이드",
+        "미션"
+      ],
+      "difficulty": null,
+      "duration_min": 33,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "33: DOOR RUN (도어런)"
+    },
+    {
+      "key": "metro-roomsa:58",
+      "name": "낭랑카페",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "힐링",
+        "판타지"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "낭랑카페"
+    },
+    {
+      "key": "metro-roomsa:58",
+      "name": "너와 나의 이야기",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "스토리"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "너와 나의 이야기"
+    },
+    {
+      "key": "metro-roomsa:58",
+      "name": "안개꽃",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "감성",
+        "로맨스"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "안개꽃"
+    },
+    {
+      "key": "metro-roomsa:58",
+      "name": "시크릿 에이전트",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "잠입",
+        "수사"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "시크릿 에이전트"
+    },
+    {
+      "key": "metro-roomsa:59",
+      "name": "아이언 게이트 프리즌",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "탈옥"
+      ],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "아이언 게이트 프리즌"
+    },
+    {
+      "key": "metro-roomsa:59",
+      "name": "놈즈 : 더 비기닝",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "탐문",
+        "수사"
+      ],
+      "difficulty": 4,
+      "duration_min": 80,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "놈즈 : 더 비기닝"
+    },
+    {
+      "key": "metro-roomsa:59",
+      "name": "미스틱 클럽",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미스터리",
+        "오컬트"
+      ],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "미스틱 클럽"
+    },
+    {
+      "key": "metro-roomsa:59",
+      "name": "The Last Dance",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "미션"
+      ],
+      "difficulty": 4,
+      "duration_min": 80,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "The Last Dance"
+    },
+    {
+      "key": "metro-roomsa:69",
+      "name": "1986, 구룡",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "1986, 구룡"
+    },
+    {
+      "key": "metro-roomsa:69",
+      "name": "2002, 주안",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "스릴러"
+      ],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "2002, 주안"
+    },
+    {
+      "key": "metro-roomsa:69",
+      "name": "2025, ALEx",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "판타지"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "2025, ALEx"
+    },
+    {
+      "key": "metro-roomsa:69",
+      "name": "1982, 그날의 사진사",
+      "source_url": "https://roomsa.co.kr/",
+      "genres": [
+        "실화",
+        "스토리텔링"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "1982, 그날의 사진사"
+    },
+    {
+      "key": "metro-pw:8",
+      "name": "엄마 나 만원만",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "수색",
+        "잠입"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "엄마 나 만원만"
+    },
+    {
+      "key": "metro-pw:8",
+      "name": "알바천국 솔로지옥",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "코믹",
+        "추리"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "알바천국 솔로지옥"
+    },
+    {
+      "key": "metro-pw:8",
+      "name": "고양만두",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "코믹",
+        "문제방"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "고양만두"
+    },
+    {
+      "key": "metro-pw:8",
+      "name": "지금 가는 중..",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "코믹",
+        "로맨스"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "지금 가는 중.."
+    },
+    {
+      "key": "metro-pw:7",
+      "name": "구해줘 햄즈",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "잠입",
+        "코믹"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "구해줘 햄즈"
+    },
+    {
+      "key": "metro-pw:7",
+      "name": "호스피스",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "공포"
+      ],
+      "difficulty": null,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "호스피스"
+    },
+    {
+      "key": "metro-pw:7",
+      "name": "세이브 더 월드",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "게임",
+        "어드벤처"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "세이브 더 월드"
+    },
+    {
+      "key": "metro-pw:7",
+      "name": "노 웨이 아웃",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "스릴러"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "노 웨이 아웃"
+    },
+    {
+      "key": "metro-pw:7",
+      "name": "별점테러 짜장나요",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "코믹",
+        "추리"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "별점테러 짜장나요"
+    },
+    {
+      "key": "metro-pw:19",
+      "name": "시간전당포",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "드라마",
+        "추리"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "시간전당포"
+    },
+    {
+      "key": "metro-pw:19",
+      "name": "사귀",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "공포"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "사귀"
+    },
+    {
+      "key": "metro-pw:19",
+      "name": "대탈출2",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "액션",
+        "어드벤처"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "대탈출2"
+    },
+    {
+      "key": "metro-pw:19",
+      "name": "MSI 미제사건 전담반",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "추리",
+        "코믹",
+        "액션"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "MSI 미제사건 전담반"
+    },
+    {
+      "key": "metro-pw:19",
+      "name": "집으로",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "스릴러",
+        "추리"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "집으로"
+    },
+    {
+      "key": "metro-pw:19",
+      "name": "쌩얼",
+      "source_url": "https://reservation.playthe.world/",
+      "genres": [
+        "연애",
+        "드라마"
+      ],
+      "difficulty": null,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "쌩얼"
+    },
+    {
+      "key": "secret:3",
+      "name": "아뜰리에",
+      "source_url": "https://www.secretgardenescape.com/#store_3",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "아뜰리에"
+    },
+    {
+      "key": "secret:3",
+      "name": "비밀의 화원",
+      "source_url": "https://www.secretgardenescape.com/#store_3",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "비밀의 화원"
+    },
+    {
+      "key": "secret:3",
+      "name": "연애학개론",
+      "source_url": "https://www.secretgardenescape.com/#store_3",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "연애학개론"
+    },
+    {
+      "key": "secret:3",
+      "name": "컬러즈",
+      "source_url": "https://www.secretgardenescape.com/#store_3",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "컬러즈"
+    },
+    {
+      "key": "secret:3",
+      "name": "블라인드",
+      "source_url": "https://www.secretgardenescape.com/#store_3",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "블라인드"
+    },
+    {
+      "key": "secret:3",
+      "name": "베이비 레이스",
+      "source_url": "https://www.secretgardenescape.com/#store_3",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "베이비 레이스"
+    },
+    {
+      "key": "secret:3",
+      "name": "슈퍼 엔지니어",
+      "source_url": "https://www.secretgardenescape.com/#store_3",
+      "genres": [],
+      "difficulty": 1,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "슈퍼 엔지니어"
+    },
+    {
+      "key": "secret:4",
+      "name": "비밀의 모험",
+      "source_url": "https://www.secretgardenescape.com/#store_4",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "비밀의 모험"
+    },
+    {
+      "key": "secret:4",
+      "name": "슈퍼플레이어:PLAYER1",
+      "source_url": "https://www.secretgardenescape.com/#store_4",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "슈퍼플레이어:PLAYER1"
+    },
+    {
+      "key": "secret:4",
+      "name": "엑스튜브",
+      "source_url": "https://www.secretgardenescape.com/#store_4",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "엑스튜브"
+    },
+    {
+      "key": "secret:4",
+      "name": "대감댁변씨",
+      "source_url": "https://www.secretgardenescape.com/#store_4",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "대감댁변씨"
+    },
+    {
+      "key": "secret:4",
+      "name": "나이스",
+      "source_url": "https://www.secretgardenescape.com/#store_4",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "나이스"
+    },
+    {
+      "key": "secret:4",
+      "name": "혜화애(야외테마)",
+      "source_url": "https://www.secretgardenescape.com/#store_4",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 90,
+      "players_min": null,
+      "players_max": null,
+      "status": "closed",
+      "catalog_name": "혜화애(야외테마)"
+    },
+    {
+      "key": "secret:5",
+      "name": "안녕",
+      "source_url": "https://www.secretgardenescape.com/#store_5",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "안녕"
+    },
+    {
+      "key": "secret:5",
+      "name": "우리의 전 사랑",
+      "source_url": "https://www.secretgardenescape.com/#store_5",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "우리의 전 사랑"
+    },
+    {
+      "key": "secret:5",
+      "name": "비밀의 선물",
+      "source_url": "https://www.secretgardenescape.com/#store_5",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "비밀의 선물"
+    },
+    {
+      "key": "secret:5",
+      "name": "레드림 컴퍼니",
+      "source_url": "https://www.secretgardenescape.com/#store_5",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "레드림 컴퍼니"
+    },
+    {
+      "key": "secret:5",
+      "name": "우끼끼",
+      "source_url": "https://www.secretgardenescape.com/#store_5",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "우끼끼"
+    },
+    {
+      "key": "secret:5",
+      "name": "핑크슈즈",
+      "source_url": "https://www.secretgardenescape.com/#store_5",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "핑크슈즈"
+    },
+    {
+      "key": "secret:6",
+      "name": "리비도",
+      "source_url": "https://www.secretgardenescape.com/#store_6",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "리비도"
+    },
+    {
+      "key": "secret:6",
+      "name": "대×9탈출",
+      "source_url": "https://www.secretgardenescape.com/#store_6",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "대×9탈출"
+    },
+    {
+      "key": "secret:6",
+      "name": "안녕",
+      "source_url": "https://www.secretgardenescape.com/#store_6",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "안녕"
+    },
+    {
+      "key": "secret:6",
+      "name": "비밀의 선물",
+      "source_url": "https://www.secretgardenescape.com/#store_6",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "비밀의 선물"
+    },
+    {
+      "key": "secret:6",
+      "name": "대감댁 변씨",
+      "source_url": "https://www.secretgardenescape.com/#store_6",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "대감댁 변씨"
+    },
+    {
+      "key": "secret:6",
+      "name": "영웅을 찾아서",
+      "source_url": "https://www.secretgardenescape.com/#store_6",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "영웅을 찾아서"
+    },
+    {
+      "key": "secret:6",
+      "name": "향수 2019",
+      "source_url": "https://www.secretgardenescape.com/#store_6",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "향수 2019"
+    },
+    {
+      "key": "secret:7",
+      "name": "비밀의 가족",
+      "source_url": "https://www.secretgardenescape.com/#store_7",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "비밀의 가족"
+    },
+    {
+      "key": "secret:7",
+      "name": "파리82",
+      "source_url": "https://www.secretgardenescape.com/#store_7",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 72,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "파리82"
+    },
+    {
+      "key": "secret:7",
+      "name": "팩토리 엠",
+      "source_url": "https://www.secretgardenescape.com/#store_7",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "팩토리 엠"
+    },
+    {
+      "key": "secret:7",
+      "name": "기다려, 금방 갈게[야외]",
+      "source_url": "https://www.secretgardenescape.com/#store_7",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 90,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "기다려, 금방 갈게"
+    },
+    {
+      "key": "secret:10",
+      "name": "무고",
+      "source_url": "https://www.secretgardenescape.com/#store_10",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "무고"
+    },
+    {
+      "key": "secret:10",
+      "name": "리비도",
+      "source_url": "https://www.secretgardenescape.com/#store_10",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "리비도"
+    },
+    {
+      "key": "secret:10",
+      "name": "스토커",
+      "source_url": "https://www.secretgardenescape.com/#store_10",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "스토커"
+    },
+    {
+      "key": "secret:10",
+      "name": "새벽 베이커리",
+      "source_url": "https://www.secretgardenescape.com/#store_10",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "새벽 베이커리"
+    },
+    {
+      "key": "secret:10",
+      "name": "비밀의 가족",
+      "source_url": "https://www.secretgardenescape.com/#store_10",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "비밀의 가족"
+    },
+    {
+      "key": "secret:10",
+      "name": "라스트 잡",
+      "source_url": "https://www.secretgardenescape.com/#store_10",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 90,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "라스트 잡"
+    },
+    {
+      "key": "secret:10",
+      "name": "(야외테마)Love Blossom",
+      "source_url": "https://www.secretgardenescape.com/#store_10",
+      "genres": [],
+      "difficulty": 1,
+      "duration_min": 80,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "(야외테마)Love Blossom"
+    },
+    {
+      "key": "secret:11",
+      "name": "H.E.L.L.P",
+      "source_url": "https://www.secretgardenescape.com/#store_11",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 100,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "H.E.L.L.P"
+    },
+    {
+      "key": "secret:11",
+      "name": "달 : 기억의 조각",
+      "source_url": "https://www.secretgardenescape.com/#store_11",
+      "genres": [],
+      "difficulty": 3.5,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "달 : 기억의 조각"
+    },
+    {
+      "key": "secret:11",
+      "name": "딜레마",
+      "source_url": "https://www.secretgardenescape.com/#store_11",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 80,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "딜레마"
+    },
+    {
+      "key": "secret:11",
+      "name": "도망자 여씨",
+      "source_url": "https://www.secretgardenescape.com/#store_11",
+      "genres": [],
+      "difficulty": 3.5,
+      "duration_min": 45,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "도망자 여씨"
+    },
+    {
+      "key": "secret:11",
+      "name": "삼남매 이씨",
+      "source_url": "https://www.secretgardenescape.com/#store_11",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "삼남매 이씨"
+    },
+    {
+      "key": "secret:12",
+      "name": "달 : 기억의 조각",
+      "source_url": "https://www.secretgardenescape.com/#store_12",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "달 : 기억의 조각"
+    },
+    {
+      "key": "secret:12",
+      "name": "사춘기",
+      "source_url": "https://www.secretgardenescape.com/#store_12",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "사춘기"
+    },
+    {
+      "key": "secret:12",
+      "name": "담력학원",
+      "source_url": "https://www.secretgardenescape.com/#store_12",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 75,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "담력학원"
+    },
+    {
+      "key": "golden:1",
+      "name": "경산",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "스릴러"
+      ],
+      "difficulty": 3,
+      "duration_min": 65,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "경산"
+    },
+    {
+      "key": "golden:1",
+      "name": "가이아 기적의땅",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "판타지"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "가이아 기적의땅"
+    },
+    {
+      "key": "golden:1",
+      "name": "JAIL.O",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "미션"
+      ],
+      "difficulty": 5,
+      "duration_min": 90,
+      "players_min": 2,
+      "players_max": 12,
+      "status": "open",
+      "catalog_name": "JAIL.O"
+    },
+    {
+      "key": "golden:1",
+      "name": "타임스틸러",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "어드벤쳐"
+      ],
+      "difficulty": 4,
+      "duration_min": 75,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "타임스틸러"
+    },
+    {
+      "key": "golden:1",
+      "name": "X됐다",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "코믹"
+      ],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "X됐다"
+    },
+    {
+      "key": "golden:11",
+      "name": "BAD ROB BAD",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "미션",
+        "잠입"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": 2,
+      "players_max": 5,
+      "status": "open",
+      "catalog_name": "BAD ROB BAD"
+    },
+    {
+      "key": "golden:11",
+      "name": "2Ways",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "아케이드"
+      ],
+      "difficulty": 4,
+      "duration_min": 70,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "2Ways"
+    },
+    {
+      "key": "golden:11",
+      "name": "LAST",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "미션"
+      ],
+      "difficulty": 3,
+      "duration_min": 70,
+      "players_min": 2,
+      "players_max": 5,
+      "status": "open",
+      "catalog_name": "LAST"
+    },
+    {
+      "key": "golden:11",
+      "name": "PILGRIM",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "모험"
+      ],
+      "difficulty": 3,
+      "duration_min": 70,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "PILGRIM"
+    },
+    {
+      "key": "golden:11",
+      "name": "지옥",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "미스터리"
+      ],
+      "difficulty": 3,
+      "duration_min": 70,
+      "players_min": 2,
+      "players_max": 5,
+      "status": "open",
+      "catalog_name": "지옥"
+    },
+    {
+      "key": "golden:11",
+      "name": "다시, 너에게",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "드라마"
+      ],
+      "difficulty": 4,
+      "duration_min": 65,
+      "players_min": 2,
+      "players_max": 5,
+      "status": "open",
+      "catalog_name": "다시, 너에게"
+    },
+    {
+      "key": "golden:11",
+      "name": "HEAVEN",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "스릴러",
+        "드라마"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "HEAVEN"
+    },
+    {
+      "key": "golden:11",
+      "name": "냥탐정 셜록캣",
+      "source_url": "http://xn--jj0b998aq3cptw.com/layout/res/home.php?go=theme.list",
+      "genres": [
+        "추리"
+      ],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "냥탐정 셜록캣"
+    },
+    {
+      "key": "sherlock:84",
+      "name": "단잠",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=84",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 65,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "단잠"
+    },
+    {
+      "key": "sherlock:84",
+      "name": "랑슈 뷰티연구소",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=84",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "랑슈 뷰티연구소"
+    },
+    {
+      "key": "sherlock:84",
+      "name": "황금 감옥 : 와캄",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=84",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "황금 감옥 : 와캄"
+    },
+    {
+      "key": "sherlock:84",
+      "name": "지프리트의 심장 (동성로점)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=84",
+      "genres": [],
+      "difficulty": null,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "지프리트의 심장 (동성로점)"
+    },
+    {
+      "key": "sherlock:115",
+      "name": "백스테이지",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=115",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "백스테이지"
+    },
+    {
+      "key": "sherlock:115",
+      "name": "개구리괴담",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=115",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "개구리괴담"
+    },
+    {
+      "key": "sherlock:115",
+      "name": "엘리멘탈",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=115",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "엘리멘탈"
+    },
+    {
+      "key": "sherlock:115",
+      "name": "안치실",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=115",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "안치실"
+    },
+    {
+      "key": "sherlock:115",
+      "name": "침프프로젝트",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=115",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "침프프로젝트"
+    },
+    {
+      "key": "sherlock:103",
+      "name": "어느날알바를마치고집에왔는데돈도없고밥도없고공모전엔또떨어져서진짜답도없고있는게아무것도없네하고감성에젖다가자려고했는데갑자기모니터에서...",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=103",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "어느날알바를마치고집에왔는데돈도없고밥도없고공모전엔또떨어져서진짜답도없고있는게아무것도없네하고감성에젖다가자려고했는데갑자기모니터에서..."
+    },
+    {
+      "key": "sherlock:103",
+      "name": "리버스 1부-결과",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=103",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "리버스 1부-결과"
+    },
+    {
+      "key": "sherlock:103",
+      "name": "리버스 2부-되감기",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=103",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "리버스 2부-되감기"
+    },
+    {
+      "key": "sherlock:95",
+      "name": "95",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=95",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "95"
+    },
+    {
+      "key": "sherlock:95",
+      "name": "골드워쳐",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=95",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "골드워쳐"
+    },
+    {
+      "key": "sherlock:95",
+      "name": "우당탕 해결사무소",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=95",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "우당탕 해결사무소"
+    },
+    {
+      "key": "sherlock:95",
+      "name": "오버드라이브",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=95",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "오버드라이브"
+    },
+    {
+      "key": "sherlock:95",
+      "name": "[프리미엄]시간의 회랑(70분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=95",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": 70,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "[프리미엄]시간의 회랑(70분)"
+    },
+    {
+      "key": "sherlock:91",
+      "name": "[프리미엄]트라이앵글(90분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=91",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 90,
+      "players_min": 2,
+      "players_max": 4,
+      "status": "open",
+      "catalog_name": "[프리미엄]트라이앵글(90분)"
+    },
+    {
+      "key": "sherlock:91",
+      "name": "[프리미엄]유품정리사(90분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=91",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": 90,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "[프리미엄]유품정리사(90분)"
+    },
+    {
+      "key": "sherlock:13",
+      "name": "지옥의 라이더",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=13",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "지옥의 라이더"
+    },
+    {
+      "key": "sherlock:13",
+      "name": "파란지붕집",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=13",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "파란지붕집"
+    },
+    {
+      "key": "sherlock:13",
+      "name": "던전을 부탁해",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=13",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "던전을 부탁해"
+    },
+    {
+      "key": "sherlock:13",
+      "name": "좀비여친",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=13",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "좀비여친"
+    },
+    {
+      "key": "sherlock:13",
+      "name": "사라민",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=13",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "사라민"
+    },
+    {
+      "key": "sherlock:13",
+      "name": "호텔:사라진 다이아몬드",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=13",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "호텔:사라진 다이아몬드"
+    },
+    {
+      "key": "sherlock:101",
+      "name": "[프리미엄]스탕달 신드롬",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=101",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "[프리미엄]스탕달 신드롬"
+    },
+    {
+      "key": "sherlock:101",
+      "name": "RE:PEAT(65분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=101",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 65,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "RE:PEAT(65분)"
+    },
+    {
+      "key": "sherlock:101",
+      "name": "데스게임:벼랑 끝에 선 자들(50분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=101",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 50,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "데스게임:벼랑 끝에 선 자들(50분)"
+    },
+    {
+      "key": "sherlock:101",
+      "name": "프로젝트 루나(60분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=101",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": 60,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "프로젝트 루나(60분)"
+    },
+    {
+      "key": "sherlock:101",
+      "name": "꿈사탕(60분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=101",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 60,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "꿈사탕(60분)"
+    },
+    {
+      "key": "sherlock:101",
+      "name": "리뉴얼준비중",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=101",
+      "genres": [],
+      "difficulty": 5,
+      "duration_min": null,
+      "players_min": null,
+      "players_max": null,
+      "status": "open",
+      "catalog_name": "리뉴얼준비중"
+    },
+    {
+      "key": "sherlock:45",
+      "name": "[프리미엄]펜타킬(70분)",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=45",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": 70,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "[프리미엄]펜타킬(70분)"
+    },
+    {
+      "key": "sherlock:45",
+      "name": "[프리미엄] 나쁜놈 나쁜놈 나쁜놈",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=45",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "[프리미엄] 나쁜놈 나쁜놈 나쁜놈"
+    },
+    {
+      "key": "sherlock:45",
+      "name": "이상한 나라의 초대 [부평]",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=45",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "이상한 나라의 초대 [부평]"
+    },
+    {
+      "key": "sherlock:45",
+      "name": "수상한형제들",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=45",
+      "genres": [],
+      "difficulty": 2,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "수상한형제들"
+    },
+    {
+      "key": "sherlock:45",
+      "name": "혼:원혼의저주",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=45",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "혼:원혼의저주"
+    },
+    {
+      "key": "sherlock:45",
+      "name": "지하감옥",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=45",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "지하감옥"
+    },
+    {
+      "key": "sherlock:105",
+      "name": "쉿!",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=105",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "쉿!"
+    },
+    {
+      "key": "sherlock:105",
+      "name": "피의제물바라지",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=105",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "피의제물바라지"
+    },
+    {
+      "key": "sherlock:105",
+      "name": "회사원",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=105",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "회사원"
+    },
+    {
+      "key": "sherlock:105",
+      "name": "Club데쓰포우",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=105",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "Club데쓰포우"
+    },
+    {
+      "key": "sherlock:105",
+      "name": "납치",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=105",
+      "genres": [],
+      "difficulty": 4,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "납치"
+    },
+    {
+      "key": "sherlock:105",
+      "name": "절대로클릭금지",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=105",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 2,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "절대로클릭금지"
+    },
+    {
+      "key": "sherlock:105",
+      "name": "학교괴담_삼거리고등학교의비밀",
+      "source_url": "https://sherlock-holmes.co.kr/reservation/index.php?bno=105",
+      "genres": [],
+      "difficulty": 3,
+      "duration_min": null,
+      "players_min": 3,
+      "players_max": 6,
+      "status": "open",
+      "catalog_name": "학교괴담_삼거리고등학교의비밀"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "https://roomsa.co.kr/",
+      "name": "비틀배틀-블루 (BEETLE BATTLE)",
+      "reason": "부스형 대결 또는 비방탈출"
+    },
+    {
+      "source": "https://reservation.playthe.world/",
+      "name": "강남점",
+      "reason": "공식 주소 미확인"
+    },
+    {
+      "source": "https://reservation.playthe.world/",
+      "name": "대전은행점",
+      "reason": "공식 주소 미확인"
+    }
+  ],
+  "summary": {
+    "before": 395,
+    "total": 592,
+    "added": 197,
+    "updated": 18,
+    "stores": 156,
+    "open_by_city": {
+      "서울": 397,
+      "경기": 31,
+      "대전": 18,
+      "부산": 26,
+      "광주": 27,
+      "대구": 47,
+      "경북": 4,
+      "인천": 38,
+      "전북": 3
+    }
+  }
+}

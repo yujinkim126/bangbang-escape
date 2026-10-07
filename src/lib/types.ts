@@ -5,8 +5,8 @@ export interface Store {
   kakao_id: string | null;
   name: string;
   address: string;
-  lat: number;
-  lng: number;
+  lat: number | null;
+  lng: number | null;
   phone: string | null;
   kakao_url: string | null;
   status: Status;

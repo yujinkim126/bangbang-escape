@@ -117,7 +117,7 @@ export default function RecordForm({ theme, onDone }: { theme: Theme; onDone: ()
       </div>
 
       <label className="field"><span>같이 간 사람 <span className="hint">쉼표로 구분</span></span>
-        <input className="input" placeholder="민지, 준호" value={companions} onChange={(e) => setCompanions(e.target.value)} />
+        <input className="input" placeholder="민지, 현준" value={companions} onChange={(e) => setCompanions(e.target.value)} />
       </label>
 
       <label className="field"><span>한 줄 메모 <span className="hint">스포일러는 쓰지 말아주세요</span></span>

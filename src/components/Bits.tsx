@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
 import Icon from "./Icon";
 
 // 여러 화면에서 같이 쓰는 작은 조각들
@@ -36,10 +36,12 @@ export function Thumb({ genres }: { genres: string[] }) {
 
 /** 찾기 화면의 목록 | 지도 전환 */
 export function ViewToggle({ className = "" }: { className?: string }) {
+  const [params]=useSearchParams();
+  const query=params.has('city') ? '?'+new URLSearchParams({city:params.get('city')!}).toString() : '';
   return (
     <div className={`view-toggle ${className}`}>
-      <NavLink to="/themes"><Icon name="list" size={16} />목록</NavLink>
-      <NavLink to="/map"><Icon name="map" size={16} />지도</NavLink>
+      <NavLink to={"/themes"+query}><Icon name="list" size={16} />목록</NavLink>
+      <NavLink to={"/map"+query}><Icon name="map" size={16} />지도</NavLink>
     </div>
   );
 }

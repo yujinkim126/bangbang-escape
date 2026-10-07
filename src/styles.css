@@ -22,7 +22,7 @@
   --fail: #e5484d;
   --fail-soft: #fdecec;
   --star: #ffc342;
-  --pin: #191f28;
+  --pin: #3182f6;
   --pin-empty: #c4cad1;
 
   --radius: 20px;
@@ -48,7 +48,7 @@
     --ok-soft: #13301f;
     --fail: #ff6b6f;
     --fail-soft: #3a1b1d;
-    --pin: #f2f3f5;
+    --pin: #4c93ff;
     --pin-empty: #50555d;
     --shadow-float: 0 10px 30px -10px rgba(0, 0, 0, .7);
     color-scheme: dark;
@@ -186,11 +186,6 @@ h2 { font-size: 20px; font-weight: 800; line-height: 1.35; }
 .map { flex: 1; min-height: 480px; z-index: 0; background: var(--surface-2); }
 .map-toggle { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); z-index: 600; box-shadow: var(--shadow-float); background: var(--surface); }
 .leaflet-container { font-family: var(--sans); }
-/* OSM 타일을 옅은 무채색으로 (핀이 잘 보이게). 카카오맵으로 바꾸면 삭제 */
-.leaflet-tile-pane { filter: grayscale(1) contrast(.85) brightness(1.08); }
-@media (prefers-color-scheme: dark) {
-  .leaflet-tile-pane { filter: grayscale(1) invert(1) contrast(.8) brightness(.85); }
-}
 .leaflet-popup-content-wrapper { border-radius: 16px; box-shadow: var(--shadow-float); background: var(--surface); color: var(--ink); }
 .leaflet-popup-tip { background: var(--surface); }
 .leaflet-popup-content { margin: 14px 16px; }
@@ -511,4 +506,68 @@ button:focus-visible,a:focus-visible,select:focus-visible { outline:3px solid va
 @media(prefers-reduced-motion:reduce){.theme-card{transition:none;}}
 
 /* Dedicated record page and optional licensed posters */
-.record-page{max-width:850px}.record-page-form,.record-picker{padding:28px}.record-selection{display:flex;justify-content:space-between;gap:16px;margin-bottom:24px;color:var(--muted)}.record-options{max-height:55vh;overflow:auto}.record-options button{display:flex;align-items:center;justify-content:space-between;width:100%;padding:16px 4px;background:transparent;border:0;border-bottom:1px solid #e8edef;text-align:left;color:inherit;cursor:pointer}.record-options small{display:block;margin-top:6px;color:#667780}.theme-poster{width:100%;height:190px;object-fit:cover;border-radius:12px;margin-bottom:16px}.poster-placeholder{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;box-sizing:border-box;padding:22px;background:linear-gradient(135deg,#e6f1ee,#f2f5fa);color:#315851;text-align:left}.poster-placeholder strong{font-size:22px;line-height:1.35}.poster-placeholder span{font-size:11px;letter-spacing:1px}.sheet .theme-poster{height:260px;margin-top:16px}.record-page .record-form{max-width:none}@media(max-width:600px){.record-page-form,.record-picker{padding:20px}.nav-link{font-size:12px}.theme-poster{height:165px}}
+.record-page{max-width:850px}.record-page-form,.record-picker{padding:28px}.record-selection{display:flex;justify-content:space-between;gap:16px;margin-bottom:24px;color:var(--muted)}.theme-poster{width:100%;height:190px;object-fit:cover;border-radius:12px;margin-bottom:16px}.poster-placeholder{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;box-sizing:border-box;padding:22px;background:linear-gradient(135deg,#e6f1ee,#f2f5fa);color:#315851;text-align:left}.poster-placeholder strong{font-size:22px;line-height:1.35}.poster-placeholder span{font-size:11px;letter-spacing:1px}.sheet .theme-poster{height:260px;margin-top:16px}.record-page .record-form{max-width:none}@media(max-width:600px){.record-page-form,.record-picker{padding:20px}.nav-link{font-size:12px}.theme-poster{height:165px}}
+
+/* Compact catalog cards for comparing several themes at once. */
+.discover-page { max-width:1480px; }
+.discovery-layout { grid-template-columns:220px minmax(0,1fr); gap:24px; }
+.theme-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.theme-card { min-width:0; padding:14px; gap:7px; }
+.theme-card .theme-poster { height:108px; margin-bottom:4px; border-radius:9px; }
+.theme-card .poster-placeholder { padding:12px; }
+.theme-card .poster-placeholder strong { font-size:15px; line-height:1.4; }
+.theme-card .poster-placeholder span { font-size:9px; letter-spacing:0; }
+.theme-card .poster-placeholder span:last-child { display:none; }
+.theme-card-top { margin-bottom:0; min-height:22px; }
+.theme-card .theme-name { font-size:16px; line-height:1.45; }
+.theme-card .theme-store { font-size:11px; line-height:1.5; overflow-wrap:anywhere; }
+.theme-card .tags { min-height:0; margin:2px 0 7px; gap:4px; }
+.theme-card .tag { font-size:10px; padding:3px 6px; }
+.theme-card .theme-facts { grid-template-columns:1fr 1fr; gap:8px; padding-top:10px; }
+.theme-card .theme-facts div:last-child { grid-column:1/-1; flex-direction:row; align-items:center; justify-content:space-between; }
+.theme-card .theme-facts strong { font-size:11px; }
+.theme-card .fear-line { font-size:10px; margin-top:2px; }
+@media(max-width:1279px) {
+ .theme-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+@media(max-width:1050px) {
+ .discovery-layout { display:block; }
+ .search-panel { position:static; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); padding:16px; gap:12px; margin-bottom:22px; }
+ .search-panel-heading,.search-panel .search-box,.filter-checks,.filter-help { grid-column:1/-1; }
+ .filter-checks { flex-direction:row; flex-wrap:wrap; padding-top:12px; }
+}
+@media(max-width:599px) {
+ .discover-page { padding-inline:14px; }
+ .theme-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+ .theme-card { padding:11px; border-radius:13px; }
+ .theme-card .theme-poster { height:90px; }
+ .theme-card .poster-placeholder { padding:10px; }
+ .theme-card .poster-placeholder strong { font-size:13px; }
+ .theme-card .theme-name { font-size:14px; }
+ .theme-card .area-label { font-size:10px; }
+ .theme-card .card-arrow { font-size:15px; }
+ .theme-card .theme-facts { gap:7px; }
+ .search-panel { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+
+/* 기록하기 — 테마 고르기 카드 */
+.record-options { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:12px; }
+.record-option { display:flex; flex-direction:column; align-items:flex-start; gap:4px; min-width:0; padding:12px; border:1px solid var(--line); border-radius:14px; background:var(--surface); color:inherit; text-align:left; cursor:pointer; transition:border-color .15s, box-shadow .15s; }
+.record-option:hover { border-color:var(--primary); box-shadow:0 5px 18px color-mix(in srgb,var(--primary) 8%,transparent); }
+.record-option:active { transform:scale(.985); }
+.record-option .theme-poster { height:110px; margin-bottom:6px; border-radius:9px; }
+.record-option .poster-placeholder { padding:12px; }
+.record-option .poster-placeholder strong { font-size:15px; }
+.record-option .poster-placeholder span { font-size:9px; letter-spacing:0; }
+.record-option .poster-placeholder span:last-child { display:none; }
+.record-option .theme-name { font-size:15px; line-height:1.4; }
+.record-option .theme-store { font-size:12px; color:var(--ink-3); overflow-wrap:anywhere; }
+.record-more { display:block; width:100%; margin-top:16px; }
+@media (max-width:600px) {
+  .record-options { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .record-option { padding:10px; }
+  .record-option .theme-poster { height:88px; }
+  .record-option .poster-placeholder strong { font-size:13px; }
+  .record-option .theme-name { font-size:14px; }
+}
+@media (prefers-reduced-motion:reduce) { .record-option { transition:none; } }
