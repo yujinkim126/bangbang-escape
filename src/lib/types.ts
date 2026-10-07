@@ -55,14 +55,19 @@ export type BadgeFilter = {
   remaining_gte?: number;
   remaining_lte?: number;
   hour_gte?: number;
+  hour_lte?: number;
   fear_gte?: number;
   difficulty_gte?: number;
+  duration_gte?: number;
   companions_gte?: number;
+  companions_lte?: number;
 };
 
 export type BadgeRule =
   | { type: "count"; target: number; filter?: BadgeFilter }
   | { type: "distinct_stores"; target: number; filter?: BadgeFilter }
+  | { type: "distinct_cities"; target: number; filter?: BadgeFilter }
+  | { type: "distinct_genres"; target: number; filter?: BadgeFilter }
   | { type: "single"; filter: BadgeFilter }
   | { type: "brand_complete"; min_themes: number }
   | { type: "companion"; target: number };

@@ -13,9 +13,9 @@ import RecordPage from "./pages/RecordPage";
 
 // needsLogin: 로그인 안 했으면 이동 대신 로그인 창을 띄운다
 const NAV: { to: string; label: string; icon: IconName; also?: string; needsLogin?: boolean }[] = [
-  { to: "/", label: "내 기록", icon: "log", needsLogin: true },
-  { to: "/records/new", label: "기록하기", icon: "plus", needsLogin: true },
   { to: "/themes", label: "찾기", icon: "search", also: "/map" },
+  { to: "/log", label: "내 기록", icon: "log", needsLogin: true },
+  { to: "/records/new", label: "기록하기", icon: "plus", needsLogin: true },
   { to: "/badges", label: "뱃지", icon: "badge" },
 ];
 
@@ -32,9 +32,10 @@ export default function App() {
         </NavLink>
         <nav className="nav" aria-label="메뉴">
           {NAV.map((n) => (
-            <NavLink key={n.to} to={n.to} end={n.to === "/"}
+            <NavLink key={n.to} to={n.to}
               onClick={(e) => { if (n.needsLogin && !session && !demo) { e.preventDefault(); openLogin(); } }}
-              className={({ isActive }) => `nav-link ${isActive || (n.also && pathname.startsWith(n.also)) ? "active" : ""}`}>
+              // 첫 화면(/)은 찾기
+              className={({ isActive }) => `nav-link ${isActive || (n.also && pathname.startsWith(n.also)) || (n.to === "/themes" && pathname === "/") ? "active" : ""}`}>
               <Icon name={n.icon} />
               <span>{n.label}</span>
             </NavLink>
@@ -58,7 +59,8 @@ export default function App() {
           <div className="loading">불러오는 중…</div>
         ) : (
           <Routes>
-            <Route path="/" element={<LogPage />} />
+            <Route path="/" element={<ThemesPage />} />
+            <Route path="/log" element={<LogPage />} />
             <Route path="/records/new" element={<RecordPage />} />
             <Route path="/themes" element={<ThemesPage />} />
             <Route path="/map" element={<MapPage />} />

@@ -1,5 +1,6 @@
 import type { Badge, BadgeFilter, EscapeRecord, Store, Theme } from "./types";
 import { districtOf } from "./format";
+import { cityOf } from "./theme-search";
 
 export interface Catalog {
   stores: Map<string, Store>;
@@ -26,7 +27,7 @@ export interface BadgeState {
   earnedBy?: EscapeRecord;
 }
 
-const THEME_KEYS: (keyof BadgeFilter)[] = ["district", "genre", "fear_gte", "difficulty_gte"];
+const THEME_KEYS: (keyof BadgeFilter)[] = ["district", "genre", "fear_gte", "difficulty_gte", "duration_gte"];
 
 function enrich(records: EscapeRecord[], cat: Catalog): Enriched[] {
   const out: Enriched[] = [];
@@ -43,6 +44,7 @@ function themeMatches(theme: Theme, store: Store, f: BadgeFilter = {}): boolean 
   if (f.genre && !theme.genres.includes(f.genre)) return false;
   if (f.fear_gte != null && (theme.fear ?? -1) < f.fear_gte) return false;
   if (f.difficulty_gte != null && (theme.difficulty ?? 0) < f.difficulty_gte) return false;
+  if (f.duration_gte != null && (theme.duration_min ?? 0) < f.duration_gte) return false;
   return true;
 }
 
@@ -54,7 +56,9 @@ export function recordMatches(e: Enriched, f: BadgeFilter = {}): boolean {
   if (f.remaining_gte != null && (r.remaining_sec ?? -1) < f.remaining_gte) return false;
   if (f.remaining_lte != null && (r.remaining_sec == null || r.remaining_sec > f.remaining_lte)) return false;
   if (f.hour_gte != null && new Date(r.played_at).getHours() < f.hour_gte) return false;
+  if (f.hour_lte != null && new Date(r.played_at).getHours() > f.hour_lte) return false;
   if (f.companions_gte != null && r.companions.length < f.companions_gte) return false;
+  if (f.companions_lte != null && r.companions.length > f.companions_lte) return false;
   return true;
 }
 
@@ -93,6 +97,22 @@ export function evaluateBadges(badges: Badge[], records: EscapeRecord[], cat: Ca
           badge, earned: visited.length >= rule.target, target: rule.target,
           progress: Math.min(visited.length, rule.target), earnedBy,
           candidates: openThemes.filter((t) => !visited.includes(t.store_id) && themeMatches(t, storeOf(t), rule.filter)),
+        };
+      }
+      case "distinct_cities":
+      case "distinct_genres": {
+        // 서로 다른 지역(서울·부산·경기…) 또는 장르 수. 어느 지역이든 같은 조건이라 특정 동네를 밀지 않는다
+        const keysOf = (t: Theme) => (rule.type === "distinct_cities" ? [cityOf(storeOf(t))] : t.genres).filter((k) => k !== "지역 미확인");
+        const seen = new Set<string>();
+        let earnedBy: EscapeRecord | undefined;
+        for (const e of list) {
+          if (!recordMatches(e, rule.filter)) continue;
+          for (const k of keysOf(e.theme)) seen.add(k);
+          if (!earnedBy && seen.size >= rule.target) earnedBy = e.r;
+        }
+        return {
+          badge, earned: seen.size >= rule.target, target: rule.target, progress: Math.min(seen.size, rule.target), earnedBy,
+          candidates: openThemes.filter((t) => !played.has(t.id) && keysOf(t).some((k) => !seen.has(k)) && themeMatches(t, storeOf(t), rule.filter)),
         };
       }
       case "single": {

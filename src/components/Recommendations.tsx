@@ -18,7 +18,7 @@ export default function Recommendations({ recs }: { recs: Recommendation[] }) {
                 <span className="rec-seal" aria-hidden>{state.badge.emoji}</span>
                 <div>
                   <div className="rec-title">
-                    {state.badge.name} 뱃지까지 <span className="rec-left">{left}{state.badge.rule.type === "distinct_stores" ? "곳" : "개"}</span> 남았어요
+                    {state.badge.name} 뱃지까지 <span className="rec-left">{left}{state.badge.rule.type === "distinct_stores" || state.badge.rule.type === "distinct_cities" ? "곳" : "개"}</span> 남았어요
                   </div>
                   <div className="muted small">{state.detail ?? state.badge.description}</div>
                 </div>

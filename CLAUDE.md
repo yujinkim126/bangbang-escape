@@ -35,8 +35,10 @@
 
 ## 뱃지
 - 정의는 DB `badges.rule`(JSON). 해석은 `src/lib/badges.ts`의 `evaluateBadges()`
-- rule 타입: `count`, `distinct_stores`, `single`, `brand_complete`, `companion`
-- filter 키: district, genre, success, hints_used, remaining_gte, remaining_lte, hour_gte, fear_gte, difficulty_gte, companions_gte
+- 목록은 `data/badges-v2.mjs` 한 곳에서 관리 → `node data/badges-v2.mjs`로 `sql/12-badges-v2.sql` + demo-catalog 생성 (44종)
+- 특정 동네(홍대 등) 전용 뱃지 금지 (사용자: 지역 차별 같다). 지역은 `distinct_cities`(서로 다른 지역 수)로만
+- rule 타입: `count`, `distinct_stores`, `distinct_cities`, `distinct_genres`, `single`, `brand_complete`, `companion`
+- filter 키: district, genre, success, hints_used, remaining_gte, remaining_lte, hour_gte, hour_lte, fear_gte, difficulty_gte, duration_gte, companions_gte, companions_lte
 - 새 rule 타입을 추가하면 `types.ts`의 `BadgeRule`과 테스트도 같이 추가
 - 진행률은 저장하지 않고 records에서 매번 계산. 새로 딴 뱃지만 `user_badges`에 기록
 
@@ -58,7 +60,7 @@
 - 색은 `src/styles.css`의 CSS 변수(:root)로만 관리. 다크모드는 prefers-color-scheme로 같은 변수만 바꿈
 - 성공=초록 "탈출", 실패=빨강 "실패"
 - 폰트: Pretendard 하나만
-- 메뉴(3탭): 기록(/) · 찾기(/themes 목록, /map 지도 — 상단 목록|지도 전환) · 뱃지(/badges). 아이콘은 `components/Icon.tsx`
+- 메뉴: 찾기(/ = /themes 목록, /map 지도) · 내 기록(/log) · 기록하기(/records/new) · 뱃지(/badges). 첫 화면은 찾기. 아이콘은 `components/Icon.tsx`
 - 모바일에선 하단 탭바. 폭 375~390px에서 확인할 것
 - 헤더에 backdrop-filter 쓰지 말 것: 안에 있는 하단 탭바(position: fixed)가 헤더 기준으로 붙어버림
 

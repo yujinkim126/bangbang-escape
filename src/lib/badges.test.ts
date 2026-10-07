@@ -77,6 +77,32 @@ describe("evaluateBadges", () => {
     const [c] = evaluateBadges([B("duo", { type: "companion", target: 3 })], recs, cat);
     expect(c).toMatchObject({ earned: true, progress: 3, detail: "민지님과 3번" });
   });
+
+  it("distinct_cities counts regions and suggests themes in regions not played yet", () => {
+    const busan: Store = { ...store("s9", null), address: "부산광역시 부산진구 어딘가" };
+    const nowhere: Store = { ...store("s8", null), address: "" };
+    const cat2: Catalog = {
+      stores: new Map([...cat.stores, ["s9", busan], ["s8", nowhere]]),
+      themes: new Map([...cat.themes, ["t9", theme("t9", "s9")], ["t8", theme("t8", "s8")]]),
+    };
+    const [one] = evaluateBadges([B("c", { type: "distinct_cities", target: 2 })], [rec("t1"), rec("t6"), rec("t8")], cat2);
+    expect(one).toMatchObject({ earned: false, progress: 1 }); // 서울 두 곳 + 주소 없는 매장 = 1개 지역
+    expect(one.candidates.map((t) => t.id)).toEqual(["t9"]);
+    const [two] = evaluateBadges([B("c", { type: "distinct_cities", target: 2 })], [rec("t1"), rec("t9")], cat2);
+    expect(two).toMatchObject({ earned: true, progress: 2 });
+  });
+
+  it("distinct_genres and the hour_lte / companions_lte / duration_gte filters", () => {
+    const [g] = evaluateBadges([B("g", { type: "distinct_genres", target: 3 })], [rec("t1"), rec("t3"), rec("t2"), rec("t4")], cat);
+    expect(g).toMatchObject({ earned: true, progress: 3 }); // 공포·공포·추리·감성
+    const recs = [rec("t5", { played_at: "2026-09-01T10:30:00", companions: [] })];
+    const out = evaluateBadges([
+      B("morning", { type: "single", filter: { hour_lte: 11 } }),
+      B("solo", { type: "single", filter: { success: true, companions_lte: 0 } }),
+      B("long", { type: "single", filter: { success: true, duration_gte: 90 } }),
+    ], recs, cat);
+    expect(out.map((s) => s.earned)).toEqual([true, true, false]);
+  });
 });
 
 describe("recommend", () => {

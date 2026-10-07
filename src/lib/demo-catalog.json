@@ -12417,12 +12417,23 @@
     {
       "code": "first_flag",
       "name": "첫 깃발",
-      "description": "첫 번째 탈출 기록을 남겼어요",
+      "description": "첫 번째 기록을 남겼어요",
       "emoji": "🚩",
       "category": "collect",
       "rule": {
         "type": "count",
         "target": 1
+      }
+    },
+    {
+      "code": "themes_5",
+      "name": "다섯 번째 문",
+      "description": "테마 5개 플레이",
+      "emoji": "🚪",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 5
       }
     },
     {
@@ -12448,6 +12459,56 @@
       }
     },
     {
+      "code": "themes_50",
+      "name": "반백 개의 문",
+      "description": "테마 50개 플레이",
+      "emoji": "🎖️",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 50
+      }
+    },
+    {
+      "code": "themes_100",
+      "name": "백 개의 문",
+      "description": "테마 100개 플레이",
+      "emoji": "👑",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 100
+      }
+    },
+    {
+      "code": "escapes_10",
+      "name": "탈출 10회",
+      "description": "탈출 성공 10번",
+      "emoji": "🔓",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 10,
+        "filter": {
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "escapes_50",
+      "name": "탈출 50회",
+      "description": "탈출 성공 50번",
+      "emoji": "🏆",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 50,
+        "filter": {
+          "success": true
+        }
+      }
+    },
+    {
       "code": "stores_5",
       "name": "길잡이",
       "description": "서로 다른 매장 5곳 방문",
@@ -12459,82 +12520,251 @@
       }
     },
     {
-      "code": "mapo_10",
-      "name": "홍대 10테마",
-      "description": "홍대(마포구)에서 테마 10개 플레이",
-      "emoji": "🎸",
-      "category": "collect",
-      "rule": {
-        "type": "count",
-        "filter": {
-          "district": "마포구"
-        },
-        "target": 10
-      }
-    },
-    {
-      "code": "mapo_stores_20",
-      "name": "홍대 정복자",
-      "description": "홍대(마포구) 매장 20곳에 깃발 꽂기",
-      "emoji": "🏳️",
+      "code": "stores_15",
+      "name": "방탈출 산책",
+      "description": "서로 다른 매장 15곳 방문",
+      "emoji": "👟",
       "category": "collect",
       "rule": {
         "type": "distinct_stores",
-        "filter": {
-          "district": "마포구"
-        },
-        "target": 20
+        "target": 15
+      }
+    },
+    {
+      "code": "stores_30",
+      "name": "방탈출 지도",
+      "description": "서로 다른 매장 30곳 방문",
+      "emoji": "🗺️",
+      "category": "collect",
+      "rule": {
+        "type": "distinct_stores",
+        "target": 30
+      }
+    },
+    {
+      "code": "cities_2",
+      "name": "원정 탈출",
+      "description": "서로 다른 지역 2곳에서 플레이 (서울·부산·경기…)",
+      "emoji": "🚄",
+      "category": "collect",
+      "rule": {
+        "type": "distinct_cities",
+        "target": 2
+      }
+    },
+    {
+      "code": "cities_4",
+      "name": "전국구",
+      "description": "서로 다른 지역 4곳에서 플레이",
+      "emoji": "🧳",
+      "category": "collect",
+      "rule": {
+        "type": "distinct_cities",
+        "target": 4
+      }
+    },
+    {
+      "code": "cities_7",
+      "name": "팔도 유람",
+      "description": "서로 다른 지역 7곳에서 플레이",
+      "emoji": "✈️",
+      "category": "collect",
+      "rule": {
+        "type": "distinct_cities",
+        "target": 7
       }
     },
     {
       "code": "genre_horror",
       "name": "공포 마스터",
-      "description": "공포 테마 5개 성공",
+      "description": "공포 테마 5개 탈출",
       "emoji": "👻",
       "category": "collect",
       "rule": {
         "type": "count",
+        "target": 5,
         "filter": {
           "genre": "공포",
           "success": true
-        },
-        "target": 5
+        }
       }
     },
     {
       "code": "genre_mystery",
       "name": "명탐정",
-      "description": "추리 테마 5개 성공",
+      "description": "추리 테마 5개 탈출",
       "emoji": "🔍",
       "category": "collect",
       "rule": {
         "type": "count",
+        "target": 5,
         "filter": {
           "genre": "추리",
           "success": true
-        },
-        "target": 5
+        }
       }
     },
     {
       "code": "genre_emotion",
       "name": "눈물 한 방울",
-      "description": "감성 테마 5개 성공",
+      "description": "감성 테마 5개 탈출",
       "emoji": "💧",
       "category": "collect",
       "rule": {
         "type": "count",
+        "target": 5,
         "filter": {
           "genre": "감성",
           "success": true
-        },
+        }
+      }
+    },
+    {
+      "code": "genre_thriller",
+      "name": "심장이 쫄깃",
+      "description": "스릴러 테마 5개 탈출",
+      "emoji": "🕯️",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 5,
+        "filter": {
+          "genre": "스릴러",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genre_fantasy",
+      "name": "이세계 여행자",
+      "description": "판타지 테마 5개 탈출",
+      "emoji": "🔮",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 5,
+        "filter": {
+          "genre": "판타지",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genre_comic",
+      "name": "웃음 사냥꾼",
+      "description": "코믹 테마 5개 탈출",
+      "emoji": "🎈",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 5,
+        "filter": {
+          "genre": "코믹",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genre_stealth",
+      "name": "그림자 요원",
+      "description": "잠입 테마 5개 탈출",
+      "emoji": "🕶️",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 5,
+        "filter": {
+          "genre": "잠입",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genre_adventure",
+      "name": "모험가",
+      "description": "어드벤처 테마 3개 탈출",
+      "emoji": "🧗",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 3,
+        "filter": {
+          "genre": "어드벤처",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genre_drama",
+      "name": "주인공",
+      "description": "드라마 테마 3개 탈출",
+      "emoji": "🎭",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 3,
+        "filter": {
+          "genre": "드라마",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genre_mission",
+      "name": "미션 클리어",
+      "description": "미션 테마 3개 탈출",
+      "emoji": "🎯",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 3,
+        "filter": {
+          "genre": "미션",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genre_romance",
+      "name": "설렘 주의",
+      "description": "로맨스 테마 3개 탈출",
+      "emoji": "💘",
+      "category": "collect",
+      "rule": {
+        "type": "count",
+        "target": 3,
+        "filter": {
+          "genre": "로맨스",
+          "success": true
+        }
+      }
+    },
+    {
+      "code": "genres_5",
+      "name": "잡식가",
+      "description": "서로 다른 장르 5가지 플레이",
+      "emoji": "🍱",
+      "category": "collect",
+      "rule": {
+        "type": "distinct_genres",
         "target": 5
       }
     },
     {
+      "code": "genres_10",
+      "name": "장르 수집가",
+      "description": "서로 다른 장르 10가지 플레이",
+      "emoji": "📚",
+      "category": "collect",
+      "rule": {
+        "type": "distinct_genres",
+        "target": 10
+      }
+    },
+    {
       "code": "brand_complete",
-      "name": "도장깨기",
-      "description": "한 브랜드의 테마(3개 이상)를 모두 성공",
+      "name": "브랜드 올클리어",
+      "description": "한 브랜드의 테마(3개 이상)를 모두 탈출",
       "emoji": "🏢",
       "category": "collect",
       "rule": {
@@ -12550,6 +12780,21 @@
       "category": "style",
       "rule": {
         "type": "single",
+        "filter": {
+          "success": true,
+          "hints_used": 0
+        }
+      }
+    },
+    {
+      "code": "no_hint_5",
+      "name": "노힌트 장인",
+      "description": "힌트 없이 5번 탈출",
+      "emoji": "🧠",
+      "category": "style",
+      "rule": {
+        "type": "count",
+        "target": 5,
         "filter": {
           "success": true,
           "hints_used": 0
@@ -12598,9 +12843,22 @@
       }
     },
     {
+      "code": "early_bird",
+      "name": "아침형 탈출러",
+      "description": "오전(12시 전)에 플레이",
+      "emoji": "🌅",
+      "category": "style",
+      "rule": {
+        "type": "single",
+        "filter": {
+          "hour_lte": 11
+        }
+      }
+    },
+    {
       "code": "brave",
       "name": "쫄보 탈출",
-      "description": "공포도 높은 테마를 성공",
+      "description": "공포도 높은 테마를 탈출",
       "emoji": "😱",
       "category": "style",
       "rule": {
@@ -12612,9 +12870,24 @@
       }
     },
     {
+      "code": "brave_3",
+      "name": "강심장",
+      "description": "공포도 2 이상 테마 3개 탈출",
+      "emoji": "🫀",
+      "category": "style",
+      "rule": {
+        "type": "count",
+        "target": 3,
+        "filter": {
+          "success": true,
+          "fear_gte": 2
+        }
+      }
+    },
+    {
       "code": "hardcore",
       "name": "고수의 길",
-      "description": "난이도 4.5 이상 테마 성공",
+      "description": "난이도 4.5 이상 테마 탈출",
       "emoji": "🔥",
       "category": "style",
       "rule": {
@@ -12622,6 +12895,63 @@
         "filter": {
           "success": true,
           "difficulty_gte": 4.5
+        }
+      }
+    },
+    {
+      "code": "hardcore_5",
+      "name": "고수",
+      "description": "난이도 4 이상 테마 5개 탈출",
+      "emoji": "🥋",
+      "category": "style",
+      "rule": {
+        "type": "count",
+        "target": 5,
+        "filter": {
+          "success": true,
+          "difficulty_gte": 4
+        }
+      }
+    },
+    {
+      "code": "marathon",
+      "name": "대장정",
+      "description": "90분 이상 테마 탈출",
+      "emoji": "⏳",
+      "category": "style",
+      "rule": {
+        "type": "single",
+        "filter": {
+          "success": true,
+          "duration_gte": 90
+        }
+      }
+    },
+    {
+      "code": "retry_3",
+      "name": "다음엔 꼭",
+      "description": "아쉽게 실패한 기록 3개",
+      "emoji": "🌱",
+      "category": "style",
+      "rule": {
+        "type": "count",
+        "target": 3,
+        "filter": {
+          "success": false
+        }
+      }
+    },
+    {
+      "code": "solo",
+      "name": "혼방 탈출",
+      "description": "혼자 플레이해서 탈출",
+      "emoji": "🦊",
+      "category": "relation",
+      "rule": {
+        "type": "single",
+        "filter": {
+          "success": true,
+          "companions_lte": 0
         }
       }
     },
@@ -12634,6 +12964,17 @@
       "rule": {
         "type": "companion",
         "target": 5
+      }
+    },
+    {
+      "code": "duo_10",
+      "name": "찐친",
+      "description": "같은 사람과 10번 함께 플레이",
+      "emoji": "🤝",
+      "category": "relation",
+      "rule": {
+        "type": "companion",
+        "target": 10
       }
     },
     {
